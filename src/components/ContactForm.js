@@ -8,12 +8,12 @@ const TextInput = ({ label, ...props }) => {
   return (
     <>
       <div className='contact__label-container'>
-        <label htmlFor={props.id || props.name}>{label}</label>
+        <label htmlFor={ props.id || props.name }>{ label }</label>
         { meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="error">{ meta.error }</div>
         ) : null }
       </div>
-      <input className="text-input" {...field} {...props} />
+      <input className="text-input" { ...field } { ...props } />
     </>
   )
 }
@@ -24,12 +24,12 @@ const PhoneInput = ({ label, ...props }) => {
   return (
     <>
       <div className='contact__label-container'>
-        <label htmlFor={props.id || props.name}>{label}</label>
+        <label htmlFor={ props.id || props.name }>{ label }</label>
         { meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="error">{ meta.error }</div>
         ) : '(optional)' }
       </div>
-      <input className="text-input" {...field} {...props} />
+      <input className="text-input" { ...field } { ...props } />
     </>
   )
 }
@@ -46,7 +46,7 @@ const ContactForm = () => {
           phoneNumber: ""
         }}
 
-        validationSchema={Yup.object({
+        validationSchema={ Yup.object({
           firstName: Yup.string()
             .max(15, "* Must be 15 characters or less")
             .required("* Required"),
@@ -63,7 +63,7 @@ const ContactForm = () => {
               )
         })}
         
-        onSubmit={async (values, { setSubmitting }) => {
+        onSubmit={ async (values, { setSubmitting }) => {
           await new Promise(r => setTimeout(r, 500))
           setSubmitting(false);
         }}

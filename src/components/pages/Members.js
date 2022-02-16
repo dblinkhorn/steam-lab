@@ -20,7 +20,7 @@ const Members = () => {
       videos.map(video =>
         <VideoCard
           key={ video.id }
-          thumbnail={ video.thumbnail}
+          thumbnail={ video.thumbnail }
           title={ video.title }
           description={ video.description }
         />
@@ -51,7 +51,7 @@ const Members = () => {
           <button
             className='members__button'
             onClick={ () => {
-            handleGradeButtonClick(kinder_videos, 'Kindergarten')
+              handleGradeButtonClick(kinder_videos, 'Kindergarten')
           }}>Kindergarten</button>
         </li>
         <li>

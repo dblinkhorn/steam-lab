@@ -13,7 +13,7 @@ const Offerings = () => {
         <div className='offerings'>
           <div className='offerings-left'>
             <div className='video-icon'>
-              <FontAwesomeIcon icon={faVideo} color='white' size='2x' style={iconStyling} />
+              <FontAwesomeIcon icon={ faVideo } color='white' size='2x' style={ iconStyling } />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Videos</span>
@@ -22,7 +22,7 @@ const Offerings = () => {
           </div>
           <div className='offerings-center'>
             <div className='file-icon'>
-              <FontAwesomeIcon icon={faFileAlt} color='white' size='2x' style={iconStyling} />
+              <FontAwesomeIcon icon={ faFileAlt } color='white' size='2x' style={ iconStyling } />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Resources</span>
@@ -31,7 +31,7 @@ const Offerings = () => {
           </div>
           <div className='offerings-right'>
             <div className='scissors-icon'>
-              <FontAwesomeIcon icon={faCut} color='white' size='2x' style={iconStyling} />
+              <FontAwesomeIcon icon={ faCut } color='white' size='2x' style={ iconStyling } />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Materials</span>
