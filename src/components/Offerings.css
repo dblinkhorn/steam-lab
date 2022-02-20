@@ -4,7 +4,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-  
+
 .offerings {
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
     width: 80%;
   }
 }
-  
+
 .offerings-left,
 .offerings-center,
 .offerings-right {
@@ -57,7 +57,7 @@
   flex-direction: column;
   align-self: center;
 }
-  
+
 .offerings-center {
   border-left-style: dotted;
   border-right-style: dotted;

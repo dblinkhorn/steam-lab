@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'quicksand-light';
+  font-family: "quicksand-light";
   src: url(./fonts/Quicksand-Light.ttf);
 }
 
 @font-face {
-  font-family: 'quicksand-regular';
+  font-family: "quicksand-regular";
   src: url(./fonts/Quicksand-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'quicksand-medium';
+  font-family: "quicksand-medium";
   src: url(./fonts/Quicksand-Medium.ttf);
 }
 
 @font-face {
-  font-family: 'quicksand-bold';
+  font-family: "quicksand-bold";
   src: url(./fonts/Quicksand-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'quicksand-semi-bold';
+  font-family: "quicksand-semi-bold";
   src: url(./fonts/Quicksand-SemiBold.ttf);
 }
 
@@ -34,14 +34,13 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'quicksand-regular';
+  font-family: "quicksand-regular";
   background-position: center;
-  background-image: 
-    linear-gradient(
-      rgba(40, 114, 146, 0.35), 
+  background-image: linear-gradient(
+      rgba(40, 114, 146, 0.35),
       rgba(40, 114, 146, 0.35)
     ),
-    url('./static/images/circles_bg.png');
+    url("./static/images/circles_bg.png");
   height: 100%;
   width: 100%;
 }
@@ -61,7 +60,7 @@ body {
 }
 
 .nav-button {
-  font-family: 'quicksand-bold';
+  font-family: "quicksand-bold";
   user-select: none;
   font-size: 1.25em;
   padding-bottom: 4px;
@@ -179,7 +178,7 @@ img {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'quicksand-regular';
+  font-family: "quicksand-regular";
   font-size: 16px;
   font-weight: 500;
   height: 50px;
@@ -192,7 +191,7 @@ img {
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
-  transition: all .2s;
+  transition: all 0.2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -202,18 +201,19 @@ img {
 
 .button-contact-us:hover {
   background-color: #0086bb;
-  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
   opacity: 1;
   transform: translateY(0);
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 
 .button-contact-us:hover:after {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .button-contact-us:active {
-  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
 }
 
 .button-contact-us:active:after {
@@ -259,7 +259,7 @@ img {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  transform: scale(1.50);
+  transform: scale(1.5);
   height: 24px;
   width: 24px;
 }
