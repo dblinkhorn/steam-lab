@@ -10,6 +10,7 @@ import {
   fifth_videos,
   sixth_videos,
 } from "../videoData";
+import VideoDetails from "../VideoDetails";
 
 const Members = () => {
   // array of each video in selected grade
@@ -20,6 +21,9 @@ const Members = () => {
         thumbnail={video.thumbnail}
         title={video.title}
         description={video.description}
+        onClick={() => {
+          handleVideoClick();
+        }}
       />
     ));
   };
@@ -30,10 +34,16 @@ const Members = () => {
     setVideosHeading(heading);
   };
 
+  const handleVideoClick = () => {
+    console.log("test");
+  };
+
   // controls state of which grade's videos to show
   const [showVideos, setShowVideos] = useState(videosMap(kinder_videos));
   // controls states heading to display depending on selected grade
   const [videosHeading, setVideosHeading] = useState("Kindergarten");
+
+  const [showVideoDetails, setShowVideoDetails] = useState(null);
 
   return (
     <div className="members__container">
