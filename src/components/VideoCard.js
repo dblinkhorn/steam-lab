@@ -2,10 +2,10 @@ import React from "react";
 import "./VideoCard.css";
 
 const VideoCard = (props) => {
-  const { thumbnail, description, title } = props;
+  const { dataIndex, thumbnail, description, title, handleVideoClick, e } = props;
 
   return (
-    <div className="video-card__container">
+    <div className="video-card__container" data-index={dataIndex} onClick={(e) => handleVideoClick(e)}>
       <div className="video-card__thumbnail">
         <img src={thumbnail} />
       </div>
