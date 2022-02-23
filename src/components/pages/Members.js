@@ -20,7 +20,6 @@ const Members = () => {
           video_title={showVideos[videoID].title}
           // video_url={showVideos[videoID].video_url}
           // video_resources={showVideos[videoID].video_resources}
-          setShowVideoDetails={setShowVideoDetails}
         />
         <button onClick={() => setShowVideoDetails(null)}>
           Back to Videos
@@ -33,7 +32,7 @@ const Members = () => {
   const [showVideos, setShowVideos] = useState(videos[0]);
   // controls states heading to display depending on selected grade
   const [videosHeading, setVideosHeading] = useState("Kindergarten");
-
+  // controls state of which video to display details page on user click
   const [showVideoDetails, setShowVideoDetails] = useState(null);
 
   return (
@@ -45,9 +44,6 @@ const Members = () => {
           <div className="members__button-container">
             {/* grades nav menu */}
             <ul className="members__grade-buttons">
-              <li>
-                <button className="members__button">All Videos</button>
-              </li>
               <li>
                 <button
                   className="members__button"
