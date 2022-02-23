@@ -54,6 +54,7 @@ import Parachutes from "../static/images/video_thumbs/sixth/parachutes.png";
 import RollerCoaster from "../static/images/video_thumbs/sixth/roller-coaster.png";
 import StrawRockets from "../static/images/video_thumbs/sixth/straw-rockets.png";
 
+// array storing arrays for each grade, each in turn storing objects for each video in that grade
 const videos = [
   [
     {
