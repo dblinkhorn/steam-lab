@@ -5,43 +5,32 @@ import { videos } from "../videoData";
 import VideoDetails from "../VideoDetails";
 
 const Members = () => {
-  // array of each video in selected grade
-  const videosMap = (videos) => {
-    return videos.map((video) => (
-      <VideoCard
-        key={video.id}
-        dataIndex={video.id}
-        thumbnail={video.thumbnail}
-        title={video.title}
-        description={video.description}
-        handleVideoClick={(event) => {
-          handleVideoClick(event);
-        }}
-      />
-    ));
-  };
-
   // updates state of shown videos & page heading
   const handleGradeButtonClick = (videos, heading) => {
-    setShowVideos(videosMap(videos));
+    setShowVideos(videos);
     setVideosHeading(heading);
   };
 
   const handleVideoClick = (e) => {
-    const videoID = e.currentTarget.getAttribute("data-index");
-    const currentVideos = showVideos;
-    console.log(currentVideos);
-    // setShowVideoDetails(
-    //   <VideoDetails
-    //     video_title={video_title}
-    //     video_url={video_url}
-    //     video_resources={video_resources}
-    //   />
-    // );
+    const videoID = e.currentTarget.getAttribute("video-index");
+    console.log(showVideos[videoID]);
+    setShowVideoDetails(
+      <>
+        <VideoDetails
+          video_title={showVideos[videoID].title}
+          // video_url={showVideos[videoID].video_url}
+          // video_resources={showVideos[videoID].video_resources}
+          setShowVideoDetails={setShowVideoDetails}
+        />
+        <button onClick={() => setShowVideoDetails(null)}>
+          Back to Videos
+        </button>
+      </>
+    );
   };
 
   // controls state of which grade's videos to show
-  const [showVideos, setShowVideos] = useState(videosMap(videos.kinder_videos));
+  const [showVideos, setShowVideos] = useState(videos[0]);
   // controls states heading to display depending on selected grade
   const [videosHeading, setVideosHeading] = useState("Kindergarten");
 
@@ -63,10 +52,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(
-                      videos.kinder_videos,
-                      "Kindergarten"
-                    );
+                    handleGradeButtonClick(videos[0], "Kindergarten");
                   }}
                 >
                   Kindergarten
@@ -76,7 +62,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.first_videos, "Grade 1");
+                    handleGradeButtonClick(videos[1], "Grade 1");
                   }}
                 >
                   Grade 1
@@ -86,7 +72,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.second_videos, "Grade 2");
+                    handleGradeButtonClick(videos[2], "Grade 2");
                   }}
                 >
                   Grade 2
@@ -96,7 +82,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.third_videos, "Grade 3");
+                    handleGradeButtonClick(videos[3], "Grade 3");
                   }}
                 >
                   Grade 3
@@ -106,7 +92,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.fourth_videos, "Grade 4");
+                    handleGradeButtonClick(videos[4], "Grade 4");
                   }}
                 >
                   Grade 4
@@ -116,7 +102,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.fifth_videos, "Grade 5");
+                    handleGradeButtonClick(videos[5], "Grade 5");
                   }}
                 >
                   Grade 5
@@ -126,7 +112,7 @@ const Members = () => {
                 <button
                   className="members__button"
                   onClick={() => {
-                    handleGradeButtonClick(videos.sixth_videos, "Grade 6");
+                    handleGradeButtonClick(videos[6], "Grade 6");
                   }}
                 >
                   Grade 6
@@ -137,7 +123,20 @@ const Members = () => {
           <div className="members__videos-container">
             <div className="members__videos-content-container">
               <div className="members__heading">{videosHeading}</div>
-              <div className="members__videos">{showVideos}</div>
+              <div className="members__videos">
+                {showVideos.map((video, index) => (
+                  <VideoCard
+                    key={video.id}
+                    videoIndex={index}
+                    thumbnail={video.thumbnail}
+                    title={video.title}
+                    description={video.description}
+                    handleVideoClick={(event) => {
+                      handleVideoClick(event);
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -54,8 +54,8 @@ import Parachutes from "../static/images/video_thumbs/sixth/parachutes.png";
 import RollerCoaster from "../static/images/video_thumbs/sixth/roller-coaster.png";
 import StrawRockets from "../static/images/video_thumbs/sixth/straw-rockets.png";
 
-const videos = {
-  kinder_videos: [
+const videos = [
+  [
     {
       id: "kinder-1",
       thumbnail: Umbrella,
@@ -98,8 +98,7 @@ const videos = {
         "Experience what it feels like to be a whale in the cold ocean water.",
     },
   ],
-
-  first_videos: [
+  [
     {
       id: "first-1",
       thumbnail: Bubbles,
@@ -141,8 +140,7 @@ const videos = {
       description: "Make some music by creating your own kazoo.",
     },
   ],
-
-  second_videos: [
+  [
     {
       id: "second-1",
       thumbnail: FrogTongue,
@@ -184,8 +182,7 @@ const videos = {
         "Bees are amazing! Explore how they pollinate the flowers around us.",
     },
   ],
-
-  third_videos: [
+  [
     {
       id: "third-1",
       thumbnail: PlayDohMarble,
@@ -226,8 +223,7 @@ const videos = {
         "Why do birds have different shaped beaks? Let's think about their dinner!",
     },
   ],
-
-  fourth_videos: [
+  [
     {
       id: "fourth-1",
       thumbnail: EarthquakeStructures,
@@ -267,8 +263,7 @@ const videos = {
         "Learn about Newton's Laws with these experiments using pennies.",
     },
   ],
-
-  fifth_videos: [
+  [
     {
       id: "fifth-1",
       thumbnail: OilSpill,
@@ -311,8 +306,7 @@ const videos = {
         "Explore crystals with magnesium sulfate and create beautiful crystals of your own.",
     },
   ],
-
-  sixth_videos: [
+  [
     {
       id: "sixth-1",
       thumbnail: StrawRockets,
@@ -353,6 +347,6 @@ const videos = {
       description: "Have fun building complex paper airplanes.",
     },
   ],
-};
+];
 
 export { videos };

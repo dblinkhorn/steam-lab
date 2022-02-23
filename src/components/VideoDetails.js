@@ -9,7 +9,9 @@ const VideoDetails = (props) => {
       <div className="videoDetails__inner-container">
         <div className="videoDetails__title"> Video Title: {video_title}</div>
         <div className="videoDetails__video">Video URL: {video_url}</div>
-        <div className="videoDetails__resources">Video Resources: {video_resources}</div>
+        <div className="videoDetails__resources">
+          Video Resources: {video_resources}
+        </div>
       </div>
     </div>
   );
