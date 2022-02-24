@@ -111,10 +111,12 @@
   -moz-border-radius: 5em;
   -webkit-border-radius: 5em;
   border-radius: 5em;
+  transition: all 0.2s ease-out;
 }
 
 .button-sample-lessons:hover {
   background: rgb(255, 196, 0);
+  transition: all 0.2s ease-out;
 }
 
 .button-sample-lessons:before {

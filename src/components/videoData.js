@@ -66,7 +66,7 @@ const videos = [
     {
       id: "kinder-2",
       thumbnail: FoilBoats,
-      title: "Buoyancy and Foil Boats",
+      title: "Buoyancy & Foil Boats",
       description:
         "What makes a boat float? Design a boat that can hold the most pennies without sinking.",
     },

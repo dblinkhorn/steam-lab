@@ -1,7 +1,7 @@
 .members__container {
-  display: flex;
+  display: flex !important;
   flex-flow: column nowrap;
-  justify-content: center;
+  align-items: center !important;
 }
 
 @media (max-width: 600px) {
@@ -45,7 +45,8 @@
   justify-content: center;
 }
 
-.members__button {
+.members__button,
+.members__back-button {
   background-color: #0075a3;
   border: none;
   border-radius: 25px;
@@ -60,7 +61,12 @@
   transition: all 0.2s ease-out;
 }
 
-.members__button:hover {
+.members__back-button {
+  width: 200px;
+}
+
+.members__button:hover,
+.members__back-button:hover {
   background-color: #0086bb;
   transition: all 0.2s ease-out;
 }
