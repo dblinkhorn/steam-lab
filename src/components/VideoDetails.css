@@ -39,3 +39,19 @@
     font-size: 1.25em;
   }
 }
+
+.video-details__video {
+  display: flex;
+  justify-content: center;
+}
+
+.video-details__resources {
+  font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .video-details__resources {
+    font-size: 1.10em;
+    text-align: center;
+  }
+}
