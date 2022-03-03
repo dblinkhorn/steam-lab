@@ -1,6 +1,7 @@
 .video-details__outer-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -13,8 +14,15 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  max-width: 1130px;
+  width: 60%;
   padding: 60px;
+}
+
+@media (max-width: 600px) {
+  .video-details__inner-container {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .video-details__title {
@@ -43,6 +51,7 @@
 .video-details__video {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .video-details__resources {

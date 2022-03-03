@@ -17,6 +17,12 @@
   padding: 60px;
 }
 
+@media (max-width: 600px) {
+  .members__videos-container {
+    padding: 20px;
+  }
+}
+
 .members__videos-content-container {
   max-width: 1130px;
 }

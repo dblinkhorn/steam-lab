@@ -14,6 +14,11 @@
   transition: all 0.2s ease-out;
 }
 
+.video-card__container:hover .video-card__thumbnail {
+  opacity: 0.88;
+  transition: all 0.2s ease-out;
+}
+
 .video-card__thumbnail {
   display: flex;
   justify-content: center;
