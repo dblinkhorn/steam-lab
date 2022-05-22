@@ -9,6 +9,10 @@ import '../../App.css';
 import TechDetails from '../TechDetails';
 
 const Home = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className='home-container'>

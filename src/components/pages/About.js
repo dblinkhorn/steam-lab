@@ -4,6 +4,10 @@ import JoePhoto from '../../static/images/joe_reed.jpg';
 import TishPhoto from '../../static/images/tish_reed.jpg';
 
 const About = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='about__container'>
             <div className='about__heading-container'>

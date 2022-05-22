@@ -5,6 +5,10 @@ import { videos } from '../videoData';
 import VideoDetails from '../VideoDetails';
 
 const Members = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     // updates state of shown videos & page heading
     const handleGradeButtonClick = (videos, heading) => {
         setShowVideos(videos);
@@ -14,7 +18,6 @@ const Members = () => {
 
     const handleVideoClick = (e) => {
         const videoID = e.currentTarget.getAttribute('video-index');
-        console.log(showVideos[videoID]);
         setShowVideoDetails(
             <>
                 <VideoDetails
@@ -40,6 +43,9 @@ const Members = () => {
 
     // controls which video to display details page from user click
     const [showVideoDetails, setShowVideoDetails] = useState(null);
+
+    // controls whether user has typed a valid password
+    const [typedCorrectPassword, setTypedCorrectPassword] = useState(false);
 
     return (
         <div className='members__container'>

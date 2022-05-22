@@ -5,6 +5,10 @@ import KidsReading from '../../static/images/kids_reading.jpg';
 import './Mission.css';
 
 const Mission = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='mission__container'>
             <div className='mission__image-container'>

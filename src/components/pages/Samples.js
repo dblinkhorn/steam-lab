@@ -2,6 +2,10 @@ import React from 'react';
 import './Samples.css';
 
 const Samples = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='samples__outer-container'>
             <div className='samples__inner-container'>
