@@ -1,14 +1,23 @@
 .samples__outer-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .samples__inner-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-  max-width: 1130px;
+  width: 60%;
+  padding: 60px;
+}
+
+@media (max-width: 600px) {
+  .samples__inner-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+  }
 }
 
 .video-mask {
@@ -27,6 +36,12 @@
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 80px;
+}
+
+.samples__video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
