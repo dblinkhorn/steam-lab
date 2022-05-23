@@ -48,6 +48,8 @@ const Members = () => {
     // controls whether user has typed a valid password
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    const [invalidLogin, setInvalidLogin] = useState(false);
+
     useEffect(() => {
         setIsLoggedIn(JSON.parse(window.sessionStorage.getItem("isLoggedIn")));
     }, []);
@@ -61,132 +63,139 @@ const Members = () => {
         passwords.forEach(validPassword =>
             password === validPassword.toLowerCase()
                 ? setIsLoggedIn(true)
-                : null
+                : setInvalidLogin(true)
         );
     };
 
-    if (isLoggedIn) {
-        return (
-            <div className='members__container'>
-                <div className='members__button-container'>
-                    {/* grades nav menu */}
-                    <ul className='members__grade-buttons'>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[0],
-                                        "Kindergarten"
-                                    );
-                                }}>
-                                Kindergarten
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[1],
-                                        "Grade 1"
-                                    );
-                                }}>
-                                Grade 1
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[2],
-                                        "Grade 2"
-                                    );
-                                }}>
-                                Grade 2
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[3],
-                                        "Grade 3"
-                                    );
-                                }}>
-                                Grade 3
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[4],
-                                        "Grade 4"
-                                    );
-                                }}>
-                                Grade 4
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[5],
-                                        "Grade 5"
-                                    );
-                                }}>
-                                Grade 5
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className='members__button'
-                                onClick={() => {
-                                    handleGradeButtonClick(
-                                        videos[6],
-                                        "Grade 6"
-                                    );
-                                }}>
-                                Grade 6
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                {showVideoDetails ? (
-                    showVideoDetails
-                ) : (
-                    <div className='members__videos-container'>
-                        <div className='members__videos-content-container'>
-                            <div className='members__heading'>
-                                {videosHeading}
-                            </div>
-                            <div className='members__videos'>
-                                {showVideos.map((video, index) => (
-                                    <VideoCard
-                                        key={video.id}
-                                        videoIndex={index}
-                                        thumbnail={video.thumbnail}
-                                        title={video.title}
-                                        description={video.description}
-                                        handleVideoClick={event => {
-                                            handleVideoClick(event);
-                                        }}
-                                    />
-                                ))}
+    return (
+        <>
+            <div style={{ display: isLoggedIn ? "none" : null }}>
+                <Login
+                    handleLogIn={handleLogIn}
+                    invalidLogin={invalidLogin}
+                    isLoggedIn={isLoggedIn}
+                />
+            </div>
+            {isLoggedIn && (
+                <div className='members__container'>
+                    <div className='members__button-container'>
+                        {/* grades nav menu */}
+                        <ul className='members__grade-buttons'>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[0],
+                                            "Kindergarten"
+                                        );
+                                    }}>
+                                    Kindergarten
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[1],
+                                            "Grade 1"
+                                        );
+                                    }}>
+                                    Grade 1
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[2],
+                                            "Grade 2"
+                                        );
+                                    }}>
+                                    Grade 2
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[3],
+                                            "Grade 3"
+                                        );
+                                    }}>
+                                    Grade 3
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[4],
+                                            "Grade 4"
+                                        );
+                                    }}>
+                                    Grade 4
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[5],
+                                            "Grade 5"
+                                        );
+                                    }}>
+                                    Grade 5
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className='members__button'
+                                    onClick={() => {
+                                        handleGradeButtonClick(
+                                            videos[6],
+                                            "Grade 6"
+                                        );
+                                    }}>
+                                    Grade 6
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    {showVideoDetails ? (
+                        showVideoDetails
+                    ) : (
+                        <div className='members__videos-container'>
+                            <div className='members__videos-content-container'>
+                                <div className='members__heading'>
+                                    {videosHeading}
+                                </div>
+                                <div className='members__videos'>
+                                    {showVideos.map((video, index) => (
+                                        <VideoCard
+                                            key={video.id}
+                                            videoIndex={index}
+                                            thumbnail={video.thumbnail}
+                                            title={video.title}
+                                            description={video.description}
+                                            handleVideoClick={event => {
+                                                handleVideoClick(event);
+                                            }}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )}
-            </div>
-        );
-    } else {
-        return <Login handleLogIn={handleLogIn} />;
-    }
+                    )}
+                </div>
+            )}
+        </>
+    );
 };
 
 export default Members;

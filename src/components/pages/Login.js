@@ -6,7 +6,6 @@ import "../ContactForm.css";
 
 const TextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
-
     return (
         <>
             <div className='contact__label-container'>
@@ -21,7 +20,7 @@ const TextInput = ({ label, ...props }) => {
 };
 
 const LoginForm = props => {
-    const { handleLogIn } = props;
+    const { handleLogIn, invalidLogin } = props;
 
     return (
         <div className='login__outer-container'>
@@ -36,14 +35,20 @@ const LoginForm = props => {
                             "* You must enter a password"
                         ),
                     })}
-                    onSubmit={async (values, { setSubmitting }) => {
-                        await new Promise(r => setTimeout(r, 500));
+                    onSubmit={(values, { setSubmitting }) => {
                         handleLogIn(values.password);
                         setSubmitting(false);
                     }}>
                     <div className='contact__form-container'>
                         <div className='contact__message'>
                             Please enter your password to view Members content.
+                            <div
+                                className='error'
+                                style={{
+                                    color: invalidLogin ? null : "#0075a3",
+                                }}>
+                                <p>* Incorrect Password. Try again.</p>
+                            </div>
                         </div>
                         <Form className='contact__form'>
                             <TextInput
