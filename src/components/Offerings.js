@@ -1,10 +1,10 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCut, faVideo, faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import './Offerings.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCut, faVideo, faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import "./Offerings.css";
 
 const iconStyling = {
-    padding: '16px',
+    padding: "16px",
 };
 
 const Offerings = () => {
@@ -30,7 +30,6 @@ const Offerings = () => {
                             42 challenge videos (six per grade-level,
                             Kindergarten through sixth)
                         </span>
-                        <br />
                     </div>
                 </div>
                 <div className='offerings-center'>
