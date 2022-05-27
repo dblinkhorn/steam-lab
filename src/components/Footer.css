@@ -49,7 +49,6 @@
   }
 }
 
-.footer__logo,
 .footer__steam-lab,
 .footer__legal {
   display: flex;
@@ -59,7 +58,6 @@
 }
 
 @media (max-width: 500px) {
-  .footer__logo,
   .footer__steam-lab,
   .footer__legal {
     max-width: 120px;
@@ -67,16 +65,9 @@
   }
 }
 
-@media (max-width: 925px) {
-  .footer__logo {
-    display: none;
-  }
-}
-
 @media (max-width: 600px) {
-  .footer__logo,
   .footer__steam-lab {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 }
 
