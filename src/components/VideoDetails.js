@@ -1,5 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import './VideoDetails.css';
+import './Offerings.css';
+
+const iconStyling = {
+    padding: '12px',
+};
 
 const VideoDetails = (props) => {
     React.useEffect(() => {
@@ -7,6 +14,8 @@ const VideoDetails = (props) => {
     }, []);
 
     const { video_title, video_url, video_resources } = props;
+
+    console.log(video_resources);
 
     return (
         <div className='video-details__outer-container'>
@@ -23,7 +32,21 @@ const VideoDetails = (props) => {
                     </video>
                 </div>
                 <div className='video-details__resources'>
-                    <p>Additional Resources & Enrichment: {video_resources}</p>
+                    <div className='video-details__resources-text'>
+                        Additional Resources & Enrichment:
+                        <div className='video-details__resources-file'>
+                            <a href={video_resources} target='_blank'>
+                                <FontAwesomeIcon
+                                    icon={faFilePdf}
+                                    color='black'
+                                    size='1x'
+                                />
+                                <span className='video-details__resources-file-text'>
+                                    {video_title}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
