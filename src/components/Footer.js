@@ -45,27 +45,6 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='footer__legal'>
-                    <span className='footer_section-title'>Legal</span>
-                    <ul>
-                        <li>
-                            <Link className='white' to='#'>
-                                Security
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='white' to='#'>
-                                Privacy Policy
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='white' to='#'>
-                                Terms &<br />
-                                Conditions
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div className='footer__copyright'>
                 ©2022 All Rights Reserved, Mr Reed's STEAM Lab

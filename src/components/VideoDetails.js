@@ -15,8 +15,6 @@ const VideoDetails = (props) => {
 
     const { video_title, video_url, video_resources } = props;
 
-    console.log(video_resources);
-
     return (
         <div className='video-details__outer-container'>
             <div className='video-details__inner-container'>

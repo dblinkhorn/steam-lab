@@ -18,6 +18,12 @@
 @media (max-width: 1475px) {
   .offerings {
     flex-flow: column wrap;
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .offerings {
     width: 80%;
   }
 }

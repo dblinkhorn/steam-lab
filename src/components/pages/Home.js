@@ -6,7 +6,6 @@ import redFlask from '../../static/images/red_flask.png';
 import Offerings from '../Offerings';
 import './Home.css';
 import '../../App.css';
-import TechDetails from '../TechDetails';
 
 const Home = () => {
     React.useEffect(() => {
@@ -86,11 +85,16 @@ const Home = () => {
                                 Resources for extending and enriching student
                                 learning
                             </li>
+                            <li>Engineering videos using Littlebits</li>
+                            <li>Robotics videos utilizing Ozobots</li>
+                            <li>
+                                Coding videos teach the use of The Coding Mouse
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <TechDetails />
+            {/* <TechDetails /> */}
         </>
     );
 };

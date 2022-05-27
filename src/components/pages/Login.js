@@ -1,8 +1,8 @@
-import React from "react";
-import { Formik, Form, useField } from "formik";
-import * as Yup from "yup";
-import "./Login.css";
-import "../ContactForm.css";
+import React from 'react';
+import { Formik, Form, useField } from 'formik';
+import * as Yup from 'yup';
+import './Login.css';
+import '../ContactForm.css';
 
 const TextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
@@ -19,7 +19,7 @@ const TextInput = ({ label, ...props }) => {
     );
 };
 
-const LoginForm = props => {
+const LoginForm = (props) => {
     const { handleLogIn, invalidLogin } = props;
 
     return (
@@ -28,31 +28,33 @@ const LoginForm = props => {
                 <div className='contact__heading'>Member Login</div>
                 <Formik
                     initialValues={{
-                        password: "",
+                        password: '',
                     }}
                     validationSchema={Yup.object({
                         password: Yup.string().required(
-                            "* You must enter a password"
+                            '* You must enter a password'
                         ),
                     })}
                     onSubmit={(values, { setSubmitting }) => {
                         handleLogIn(values.password);
                         setSubmitting(false);
-                    }}>
+                    }}
+                >
                     <div className='contact__form-container'>
                         <div className='contact__message'>
                             Please enter your password to view Members content.
                             <div
                                 className='error'
                                 style={{
-                                    color: invalidLogin ? null : "#0075a3",
-                                }}>
+                                    color: invalidLogin ? null : '#0075a3',
+                                }}
+                            >
                                 <p>* Incorrect Password. Try again.</p>
                             </div>
                         </div>
                         <Form className='contact__form'>
                             <TextInput
-                                label='Password'
+                                label='Password:'
                                 name='password'
                                 type='password'
                                 placeholder='Enter your password'
@@ -60,7 +62,8 @@ const LoginForm = props => {
                             <div className='contact__submit-container'>
                                 <button
                                     className='contact__submit-button'
-                                    type='submit'>
+                                    type='submit'
+                                >
                                     Login
                                 </button>
                             </div>
