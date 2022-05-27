@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import pencilKid from '../static/images/kid-pencil.png';
 import './Footer.css';
 
 const Footer = () => {
     return (
         <div className='footer__container'>
             <div className='footer__main'>
-                <div className='footer__logo'>
-                    <img src={pencilKid} alt='kid on a pencil' />
-                </div>
                 <div className='footer__steam-lab'>
                     <span className='footer_section-title'>Site Links</span>
                     <ul>
