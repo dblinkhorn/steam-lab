@@ -18,6 +18,11 @@ const Members = () => {
         setShowVideoDetails(null);
     };
 
+    const backButtonClicked = () => {
+        setShowVideoDetails(null);
+        window.scrollTo(0, 0);
+    };
+
     const handleVideoClick = (e) => {
         const videoID = e.currentTarget.getAttribute('video-index');
         setShowVideoDetails(
@@ -29,7 +34,7 @@ const Members = () => {
                 />
                 <button
                     className='members__back-button'
-                    onClick={() => setShowVideoDetails(null)}
+                    onClick={() => backButtonClicked()}
                 >
                     Back to Videos
                 </button>
