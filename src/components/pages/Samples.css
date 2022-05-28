@@ -7,9 +7,8 @@
 .samples__inner-container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  width: 60%;
-  padding: 60px;
+  justify-items: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -38,10 +37,11 @@
   margin-bottom: 80px;
 }
 
-.samples__video {
+.samples__videos {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  width: 100%;
+  gap: 50px;
 }
 
 @media (max-width: 600px) {

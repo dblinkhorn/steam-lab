@@ -110,6 +110,12 @@ import ParachutesResource from "../static/resources/Sixth-Grade-Parachutes-and-A
 import RollerCoasterResource from "../static/resources/Sixth-Grade-Roller-Coaster-Physics.pdf";
 import StrawRocketsResource from "../static/resources/Sixth-Grade-Straw-Rockets.pdf";
 
+// technology thumbnails
+
+import CodingMouse from "../static/images/video_thumbs/tech/coding-mouse.png";
+import LittleBits from "../static/images/video_thumbs/tech/little-bits.png";
+import Ozobots from "../static/images/video_thumbs/tech/ozobots.png";
+
 // stores arrays for each grade, each in turn storing objects for each video in that grade
 const videos = [
     [
@@ -340,7 +346,7 @@ const videos = [
         {
             id: "fourth-5",
             thumbnail: WindCar,
-            title: "Wind-powered Car",
+            title: "Wind Powered Car",
             description: "Explore an alternative energy source to power a car.",
             resource: WindCarResource,
         },
@@ -449,20 +455,17 @@ const videos = [
             resource: PaperAirplaneResource,
         },
     ],
-
-    // need to get below working
-
     [
         {
             id: "tech-1",
-            // thumbnail: Ozobot,
+            thumbnail: Ozobots,
             title: "Straw Rockets",
             description: "Design and engineer a high flying rocket.",
             resource: null,
         },
         {
             id: "tech-2",
-            // thumbnail: CodingMouse,
+            thumbnail: CodingMouse,
             title: "Coding Mouse Introduction",
             description:
                 "How do parachutes help people land safely after jumping out of a plane?",
@@ -470,7 +473,7 @@ const videos = [
         },
         {
             id: "tech-3",
-            // thumbnail: LittleBits,
+            thumbnail: LittleBits,
             title: "LittleBits Engineering",
             description:
                 "Explore different types of bridges and build the strongest bridge ever.",

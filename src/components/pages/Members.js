@@ -7,7 +7,7 @@ import Login from "./Login";
 import { passwords } from "./secure";
 
 const Members = () => {
-    React.useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 

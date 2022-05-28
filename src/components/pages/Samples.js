@@ -1,41 +1,78 @@
-import React from 'react';
-import './Samples.css';
+import React, { useState, useEffect } from "react";
+import "./Samples.css";
+import "./Members.css";
+import { videos } from "../videoData";
+import VideoDetails from "../VideoDetails";
+import VideoCard from "../VideoCard";
+import Umbrella from "../../static/images/video_thumbs/kinder/umbrella.png";
+import Catapults from "../../static/images/video_thumbs/fourth/catapults.png";
 
 const Samples = () => {
-    React.useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const backButtonClicked = () => {
+        setShowVideoDetails(null);
+        window.scrollTo(0, 0);
+    };
+
+    const handleVideoClick = e => {
+        const videoIndex = e.currentTarget.getAttribute("video-index");
+        console.log(videoIndex);
+        setShowVideoDetails(
+            <>
+                <VideoDetails
+                    video_title={
+                        videoIndex === 0 ? "Design an Umbrella" : "Catapults"
+                    }
+                    // video_url={showVideos[videoID].url}
+                />
+                <button
+                    className='members__back-button'
+                    onClick={() => backButtonClicked()}>
+                    Back to Videos
+                </button>
+            </>
+        );
+    };
+
+    // controls which video to display details page from user click
+    const [showVideoDetails, setShowVideoDetails] = useState(null);
 
     return (
         <div className='samples__outer-container'>
             <div className='samples__inner-container'>
-                <div className='samples__video-title'>Sample Video 1</div>
-                <div className='samples__video'>
-                    <video
-                        className='video-mask'
-                        playsInline
-                        controls
-                        style={{ opacity: 1, width: '100%' }}
-                    >
-                        <source
-                            src='https://mrreedssteamlab.s3.us-west-1.amazonaws.com/K%20Umbrella%20.mp4?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJZTAMNFTJWN57ZJQ%2F20220208%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20220208T071101Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=2f05e8d27bbf7c272d1f1dacd1cc9777102fb55d2458f9d9a6e6102fbbe9101a'
-                            type='video/mp4'
-                        />
-                    </video>
-                </div>
-                <div className='samples__video-title'>Sample Video 2</div>
-                <div className='samples__video'>
-                    <video
-                        className='video-mask'
-                        playsInline
-                        controls
-                        style={{ opacity: 1, width: '100%' }}
-                    >
-                        <source
-                            src='https://mrreedssteamlab.s3.us-west-1.amazonaws.com/K%20Umbrella%20.mp4?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJZTAMNFTJWN57ZJQ%2F20220208%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20220208T071101Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=2f05e8d27bbf7c272d1f1dacd1cc9777102fb55d2458f9d9a6e6102fbbe9101a'
-                            type='video/mp4'
-                        />
-                    </video>
+                {!showVideoDetails && (
+                    <div className='samples__video-title'>Sample Lessons</div>
+                )}
+                <div className='samples__videos'>
+                    {showVideoDetails ? (
+                        showVideoDetails
+                    ) : (
+                        <>
+                            <VideoCard
+                                key={videos[0][0].id}
+                                videoIndex={0}
+                                thumbnail={Umbrella}
+                                title='Design an Umbrella'
+                                description={videos[0][0].description}
+                                handleVideoClick={event => {
+                                    handleVideoClick(event);
+                                }}
+                            />
+                            <VideoCard
+                                key={videos[3][1].id}
+                                videoIndex={1}
+                                thumbnail={Catapults}
+                                title='Catapults'
+                                description={videos[3][1].description}
+                                handleVideoClick={event => {
+                                    handleVideoClick(event);
+                                }}
+                            />
+                        </>
+                    )}
                 </div>
             </div>
         </div>

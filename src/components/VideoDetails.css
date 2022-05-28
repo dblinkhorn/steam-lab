@@ -9,7 +9,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   width: 60%;
-  padding: 60px;
+  padding: 30px;
 }
 
 @media (max-width: 600px) {
