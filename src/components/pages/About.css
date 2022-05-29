@@ -41,7 +41,14 @@
 
 .about__tish-container .about__body-text {
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 120px;
+}
+
+@media (max-width: 1460px) {
+    .about__tish-container .about__body-text {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 1460px) {
@@ -94,6 +101,10 @@
         max-width: 300px;
         max-height: 300px;
     }
+
+    .about__tish-image img {
+        margin-top: 40px;
+    }
 }
 
 .about__name-text {
@@ -101,7 +112,7 @@
     color: black;
     font-weight: bold;
     font-size: 2em;
-    margin: 0px;
+    margin: 10px 0px;
 }
 
 .about__text {
