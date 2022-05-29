@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './Samples.css';
-import './Members.css';
-import { videos } from '../videoData';
-import VideoDetails from '../VideoDetails';
-import VideoCard from '../VideoCard';
-import Umbrella from '../../static/images/video_thumbs/kinder/umbrella.png';
-import Catapults from '../../static/images/video_thumbs/fourth/catapults.png';
+import React, { useState, useEffect } from "react";
+import "./Samples.css";
+import "./Members.css";
+import { videos } from "../videoData";
+import VideoDetails from "../VideoDetails";
+import VideoCard from "../VideoCard";
+import Umbrella from "../../static/images/video_thumbs/kinder/umbrella.png";
+import Catapults from "../../static/images/video_thumbs/fourth/catapults.png";
 
 const Samples = () => {
     useEffect(() => {
@@ -17,26 +17,25 @@ const Samples = () => {
         window.scrollTo(0, 0);
     };
 
-    const handleVideoClick = (e) => {
-        const videoIndex = e.currentTarget.getAttribute('video-index');
+    const handleVideoClick = e => {
+        const videoIndex = e.currentTarget.getAttribute("video-index");
         console.log(videoIndex);
         setShowVideoDetails(
             <>
                 <VideoDetails
                     video_title={
-                        videoIndex === '0' ? 'Design an Umbrella' : 'Catapults'
+                        videoIndex === "0" ? "Design an Umbrella" : "Catapults"
                     }
                     // video_url={showVideos[videoID].url}
                     video_resources={
-                        videoIndex === '0'
+                        videoIndex === "0"
                             ? videos[0][0].resource
-                            : videos[3][1].resource
+                            : videos[4][1].resource
                     }
                 />
                 <button
                     className='members__back-button'
-                    onClick={() => backButtonClicked()}
-                >
+                    onClick={() => backButtonClicked()}>
                     Back to Videos
                 </button>
             </>
@@ -50,10 +49,9 @@ const Samples = () => {
         <div
             className={
                 showVideoDetails
-                    ? 'samples__outer-container'
-                    : 'samples__outer-container footer_fill'
-            }
-        >
+                    ? "samples__outer-container"
+                    : "samples__outer-container footer_fill"
+            }>
             <div className='samples__inner-container'>
                 {!showVideoDetails && (
                     <div className='samples__video-title'>Sample Lessons</div>
@@ -61,10 +59,9 @@ const Samples = () => {
                 <div
                     className={
                         showVideoDetails
-                            ? 'samples__videos'
-                            : 'samples__videos cards-gap cards-padding'
-                    }
-                >
+                            ? "samples__videos"
+                            : "samples__videos cards-gap cards-padding"
+                    }>
                     {showVideoDetails ? (
                         showVideoDetails
                     ) : (
@@ -75,17 +72,17 @@ const Samples = () => {
                                 thumbnail={Umbrella}
                                 title='Design an Umbrella'
                                 description={videos[0][0].description}
-                                handleVideoClick={(event) => {
+                                handleVideoClick={event => {
                                     handleVideoClick(event);
                                 }}
                             />
                             <VideoCard
-                                key={videos[3][1].id}
+                                key={videos[4][1].id}
                                 videoIndex={1}
                                 thumbnail={Catapults}
                                 title='Catapults'
-                                description={videos[3][1].description}
-                                handleVideoClick={(event) => {
+                                description={videos[4][1].description}
+                                handleVideoClick={event => {
                                     handleVideoClick(event);
                                 }}
                             />
