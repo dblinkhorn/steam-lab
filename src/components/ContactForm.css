@@ -1,143 +1,149 @@
 .contact__form-outer-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
-  .contact__form-outer-container {
-    margin-top: 80px;
-  }
+    .contact__form-outer-container {
+        margin-top: 80px;
+    }
 }
 
 .contact__form-inner-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 700px;
 }
 
 .contact__form-container {
-  background-color: #0075a3;
-  border-radius: 16px;
-  padding: 40px;
-  color: white;
+    background-color: #0075a3;
+    border-radius: 16px;
+    padding: 40px;
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .contact__form-container {
+        margin: 0px 20px 0px 20px;
+    }
 }
 
 @media (max-width: 560px) {
-  .contact__form-inner-container {
-    width: 90%;
-  }
+    .contact__form-inner-container {
+        width: 90%;
+    }
 }
 
 .contact__heading {
-  display: flex;
-  justify-content: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 20px;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 85px;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 85px;
 }
 
 .contact__message {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .contact__form {
-  display: flex;
-  flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .contact__label-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 @media (max-width: 560px) {
-  .contact__label-container {
-    flex-flow: column nowrap;
-  }
+    .contact__label-container {
+        flex-flow: column nowrap;
+    }
 }
 
 input {
-  width: 100%;
-  padding: 12px 20px;
-  margin-bottom: 50px;
-  margin: 12px 0px 40px 0px;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px dashed white;
-  background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 50px;
+    margin: 12px 0px 40px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px dashed white;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 input:active {
-  background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .text-input {
-  font-size: 1.25em;
-  color: white;
+    font-size: 1.25em;
+    color: white;
 }
 
 input:focus,
 textarea:focus,
 select:focus,
 .text-input:focus {
-  outline: none;
+    outline: none;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-text-fill-color: white;
-  transition: background-color 5000s ease-in-out 0s;
-  color: white;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+    color: white;
 }
 
 label {
-  font-weight: bold;
-  font-size: 1.25em;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 .error {
-  color: #ff5b14;
-  font-weight: bold;
+    color: #ff5b14;
+    font-weight: bold;
 }
 
 .contact__submit-container {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #aaa;
-  opacity: 1; /* Firefox */
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #aaa;
+    opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #aaa;
+    /* Internet Explorer 10-11 */
+    color: #aaa;
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #aaa;
+    /* Microsoft Edge */
+    color: #aaa;
 }
 
 /* Submit button */
 
 .contact__submit-button {
-  background-color: #0075a3;
-  color: white;
-  font-size: 1.5em;
-  border: none;
-  margin-bottom: 2px;
-  border-bottom: 2px dashed #0075a3;
-  cursor: pointer;
+    background-color: #0075a3;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    margin-bottom: 2px;
+    border-bottom: 2px dashed #0075a3;
+    cursor: pointer;
 }

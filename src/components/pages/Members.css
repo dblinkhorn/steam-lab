@@ -1,93 +1,93 @@
 .members__container {
-  display: flex !important;
-  flex-flow: column nowrap;
-  align-items: center !important;
+    display: flex !important;
+    flex-flow: column nowrap;
+    align-items: center !important;
 }
 
 @media (max-width: 600px) {
-  .members__container {
-    margin-top: 80px;
-  }
+    .members__container {
+        margin-top: 80px;
+    }
 }
 
 .members__videos-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
 }
 
 @media (max-width: 600px) {
-  .members__videos-container {
-    padding: 20px;
-  }
+    .members__videos-container {
+        padding: 20px;
+    }
 }
 
 .members__videos-content-container {
-  max-width: 1130px;
+    max-width: 1130px;
 }
 
 .members__videos {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 50px;
-  max-width: 1130px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1130px;
 }
 
 .members__heading {
-  display: flex;
-  justify-content: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 20px;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 80px;
 }
 
 .members__button-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .members__button,
 .members__back-button {
-  background-color: #0075a3;
-  border: none;
-  border-radius: 25px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
+    background-color: #0075a3;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
 .members__back-button {
-  width: 200px;
+    width: 200px;
 }
 
 .members__button:hover,
 .members__back-button:hover {
-  background-color: #0086bb;
-  transition: all 0.2s ease-out;
+    background-color: #0086bb;
+    transition: all 0.2s ease-out;
 }
 
 .members__grade-buttons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 12px;
-  list-style: none;
-  padding: 0px 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0px 60px;
 }
 
 @media (max-width: 600px) {
-  .members__grade-buttons {
-    max-width: 90%;
-  }
+    .members__grade-buttons {
+        max-width: 90%;
+    }
 }

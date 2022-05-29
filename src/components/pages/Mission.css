@@ -1,166 +1,166 @@
 .mission__container {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 15%;
-  padding-right: 15%;
-  justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
 }
 
 @media (max-width: 1460px) {
-  .mission__container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+    .mission__container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media (max-width: 600px) {
-  .mission__container {
-    margin-top: 60px;
-  }
+    .mission__container {
+        margin-top: 60px;
+    }
 }
 
 .mission__heading-container-our-mission,
 .mission__heading-container-learning-loss,
 .mission__heading-container-english-learners {
-  display: flex;
-  padding-bottom: 40px;
+    display: flex;
+    padding-bottom: 40px;
 }
 
 .mission__heading-container-learning-loss,
 .mission__heading-container-english-learners {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 
 .mission__content-container {
-  display: flex;
-  flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 @media (max-width: 1460px) {
-  .mission__heading-container-our-mission,
-  .mission__heading-container-learning-loss,
-  .mission__heading-container-english-learners {
-    margin: 0px;
-    justify-content: center;
-  }
+    .mission__heading-container-our-mission,
+    .mission__heading-container-learning-loss,
+    .mission__heading-container-english-learners {
+        margin: 0px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1460px) {
-  .mission__heading-container {
-    padding-top: 40px;
-  }
+    .mission__heading-container {
+        padding-top: 40px;
+    }
 }
 
 .mission__image-container {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
 }
 
 @media (max-width: 1460px) {
-  .mission__image-container {
-    flex-flow: column nowrap;
-  }
+    .mission__image-container {
+        flex-flow: column nowrap;
+    }
 }
 
 .mission__heading {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 20px;
-  font-size: 2.5em;
-  font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 .mission__image-our-mission img {
-  margin-top: 110px;
+    margin-top: 110px;
 }
 
 .mission__image-learning-loss img {
-  max-width: 300px;
-  margin-top: 234px;
-  border-radius: 20px;
-  border-width: 3px;
-  border-color: #0075a3;
-  border-style: solid;
+    max-width: 300px;
+    margin-top: 234px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #0075a3;
+    border-style: solid;
 }
 
 .mission__image-english-learners img {
-  margin-top: 236px;
+    margin-top: 236px;
 }
 
 .mission__image-english-learners img {
-  border-radius: 20px;
-  border-width: 3px;
-  border-color: #0075a3;
-  border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #0075a3;
+    border-style: solid;
 }
 
 @media (max-width: 1460px) {
-  .mission__image-our-mission,
-  .mission__image-learning-loss,
-  .mission__image-english-learners {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+    .mission__image-our-mission,
+    .mission__image-learning-loss,
+    .mission__image-english-learners {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .mission__image-our-mission img,
-  .mission__image-learning-loss img,
-  .mission__image-english-learners img {
-    margin-top: 25px;
-    max-width: 300px;
-    max-height: 300px;
-  }
+    .mission__image-our-mission img,
+    .mission__image-learning-loss img,
+    .mission__image-english-learners img {
+        margin-top: 25px;
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 .mission__name-text {
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .mission__text {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
 @media (max-width: 1460px) {
-  .mission__text {
-    margin: 0px;
-  }
+    .mission__text {
+        margin: 0px;
+    }
 }
 
 .mission__body-text {
-  display: flex;
-  vertical-align: center;
-  font-size: 1.5em;
-  overflow-wrap: break-word;
-  /* margin-bottom: 75px; */
+    display: flex;
+    vertical-align: center;
+    font-size: 1.5em;
+    overflow-wrap: break-word;
+    /* margin-bottom: 75px; */
 }
 
 .mission__section-heading {
-  font-size: 1.25em;
-  font-weight: bold;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 .video__container {
-  margin-bottom: 75px;
+    margin-bottom: 75px;
 }
 
 @media (max-width: 1460px) {
-  .mission__body-text {
-    padding-top: 0px;
-    margin-bottom: 20px;
-  }
+    .mission__body-text {
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 600px) {
-  .mission__body-text {
-    font-size: 1.25em;
-  }
+    .mission__body-text {
+        font-size: 1.25em;
+    }
 }
 
 .citation {
-  font-size: 0.75em;
+    font-size: 0.75em;
 }

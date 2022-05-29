@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import kidsHome from "../../static/images/kids-home.png";
-import kidsHome2 from "../../static/images/kids-home2.png";
-import redFlask from "../../static/images/red_flask.png";
-import Offerings from "../Offerings";
-import "./Home.css";
-import "../../App.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import kidsHome from '../../static/images/kids-home.png';
+import kidsHome2 from '../../static/images/kids-home2.png';
+import redFlask from '../../static/images/red_flask.png';
+import Offerings from '../Offerings';
+import './Home.css';
+import '../../App.css';
 
 const Home = () => {
     React.useEffect(() => {

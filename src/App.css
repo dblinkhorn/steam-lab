@@ -1,226 +1,226 @@
 @font-face {
-  font-family: "quicksand-light";
-  src: url(./fonts/Quicksand-Light.ttf);
+    font-family: 'quicksand-light';
+    src: url(./fonts/Quicksand-Light.ttf);
 }
 
 @font-face {
-  font-family: "quicksand-regular";
-  src: url(./fonts/Quicksand-Regular.ttf);
+    font-family: 'quicksand-regular';
+    src: url(./fonts/Quicksand-Regular.ttf);
 }
 
 @font-face {
-  font-family: "quicksand-medium";
-  src: url(./fonts/Quicksand-Medium.ttf);
+    font-family: 'quicksand-medium';
+    src: url(./fonts/Quicksand-Medium.ttf);
 }
 
 @font-face {
-  font-family: "quicksand-bold";
-  src: url(./fonts/Quicksand-Bold.ttf);
+    font-family: 'quicksand-bold';
+    src: url(./fonts/Quicksand-Bold.ttf);
 }
 
 @font-face {
-  font-family: "quicksand-semi-bold";
-  src: url(./fonts/Quicksand-SemiBold.ttf);
+    font-family: 'quicksand-semi-bold';
+    src: url(./fonts/Quicksand-SemiBold.ttf);
 }
 
 * {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html,
 body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "quicksand-regular";
-  background-position: center;
-  background-image: linear-gradient(
-      rgba(40, 114, 146, 0.35),
-      rgba(40, 114, 146, 0.35)
-    ),
-    url("./static/images/circles_bg.png");
-  height: 100%;
-  width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'quicksand-regular';
+    background-position: center;
+    background-image: linear-gradient(
+            rgba(40, 114, 146, 0.35),
+            rgba(40, 114, 146, 0.35)
+        ),
+        url('./static/images/circles_bg.png');
+    height: 100%;
+    width: 100%;
 }
 
 .navigation {
-  height: 150px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
-  .navigation {
-    flex-flow: column nowrap;
-  }
+    .navigation {
+        flex-flow: column nowrap;
+    }
 }
 
 .nav-button {
-  font-family: "quicksand-bold";
-  user-select: none;
-  font-size: 1.25em;
-  padding-bottom: 4px;
+    font-family: 'quicksand-bold';
+    user-select: none;
+    font-size: 1.25em;
+    padding-bottom: 4px;
 }
 
 .nav-button a:hover {
-  color: #0075a3 !important;
+    color: #0075a3 !important;
 }
 
 nav li {
-  list-style: none;
-  display: inline;
-  margin-right: 26px;
+    list-style: none;
+    display: inline;
+    margin-right: 26px;
 }
 
 .logo-left {
-  display: flex;
-  width: 281px;
-  padding-left: 40px;
-  justify-content: center;
+    display: flex;
+    width: 281px;
+    padding-left: 40px;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
-  .logo-left {
-    margin-bottom: 40px;
-    padding-left: 0px;
-  }
+    .logo-left {
+        margin-bottom: 40px;
+        padding-left: 0px;
+    }
 }
 
 .logo-image {
-  display: inline;
+    display: inline;
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media (max-width: 1422px) {
-  .nav-list {
-    display: none;
-  }
+    .nav-list {
+        display: none;
+    }
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .nav-button a {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 6px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 6px;
 }
 
 .nav-button .active {
-  border-bottom-style: solid;
-  border-width: 3px;
-  border-color: #0075a3;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #0075a3;
 }
 
 .nav-button a:visited {
-  color: black;
+    color: black;
 }
 
 .contact-us {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  padding-right: 40px;
-  width: 281px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-right: 40px;
+    width: 281px;
 }
 
 @media (max-width: 1422px) {
-  .contact-us {
-    padding-right: 10%;
-  }
+    .contact-us {
+        padding-right: 10%;
+    }
 }
 
 @media (max-width: 800px) {
-  .contact-us {
-    padding-right: 15%;
-  }
+    .contact-us {
+        padding-right: 15%;
+    }
 }
 
 @media (max-width: 600px) {
-  .contact-us {
-    padding-right: 0px;
-  }
+    .contact-us {
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 600px) {
-  .contact-us {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 20px;
-    width: 100%;
-  }
+    .contact-us {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        width: 100%;
+    }
 }
 
 /* Contact Us Button */
 
 .button-contact-us {
-  appearance: none;
-  backface-visibility: hidden;
-  background-color: #0075a3;
-  border-radius: 25px;
-  border-style: none;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "quicksand-regular";
-  font-size: 16px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: normal;
-  line-height: 1.5;
-  outline: none;
-  overflow: hidden;
-  padding: 14px 30px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #0075a3;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'quicksand-regular';
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 }
 
 .button-contact-us:hover {
-  background-color: #0086bb;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
-  opacity: 1;
-  transform: translateY(0);
-  transition-duration: 0.2s;
+    background-color: #0086bb;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 0.2s;
 }
 
 .button-contact-us:hover:after {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .button-contact-us:active {
-  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
-    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+        rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
 }
 
 .button-contact-us:active:after {
-  opacity: 1;
+    opacity: 1;
 }
 
 @media (min-width: 768px) {
-  .button-contact-us {
-    padding: 14px 22px;
-    width: 176px;
-  }
+    .button-contact-us {
+        padding: 14px 22px;
+        width: 176px;
+    }
 }
 
 /* react-burger-menu styles */
@@ -228,41 +228,41 @@ a {
 /* Position and sizing of burger button */
 
 .bm-burger-button {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 1422px) {
-  .bm-burger-button {
-    display: block;
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 68px;
-  }
+    .bm-burger-button {
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 30px;
+        right: 36px;
+        top: 68px;
+    }
 }
 
 @media (max-width: 600px) {
-  .bm-burger-button {
-    top: 162px;
-  }
+    .bm-burger-button {
+        top: 162px;
+    }
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+    background: #373a47;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  transform: scale(1.5);
-  height: 24px;
-  width: 24px;
+    transform: scale(1.5);
+    height: 24px;
+    width: 24px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+    background: #bdc3c7;
 }
 
 /*
@@ -270,45 +270,40 @@ Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
-  position: fixed;
-  height: 100%;
-  box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #004e6d;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  height: 100%;
+    background: #004e6d;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    height: 100%;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-  height: 80% !important;
+    color: #b8b7ad;
+    padding: 0.8em;
+    height: 80% !important;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
-  color: white !important;
-  font-weight: bolder;
-  padding-bottom: 16px;
+    display: inline-block;
+    color: white !important;
+    font-weight: bolder;
+    padding-bottom: 16px;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .footer {
-  margin-top: 50px;
-}
-
-@media (max-width: 926px) {
-  .footer {
-    margin-top: 25px;
-  }
+    align-content: flex-end;
+    margin-top: 50px;
 }

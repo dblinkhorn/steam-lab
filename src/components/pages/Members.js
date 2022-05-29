@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import VideoCard from "../VideoCard";
-import "./Members.css";
-import { videos } from "../videoData";
-import VideoDetails from "../VideoDetails";
-import Login from "./Login";
-import { passwords } from "./secure";
+import React, { useState, useEffect } from 'react';
+import VideoCard from '../VideoCard';
+import './Members.css';
+import { videos } from '../videoData';
+import VideoDetails from '../VideoDetails';
+import Login from './Login';
+import { passwords } from './secure';
 
 const Members = () => {
     useEffect(() => {
@@ -23,8 +23,8 @@ const Members = () => {
         window.scrollTo(0, 0);
     };
 
-    const handleVideoClick = e => {
-        const videoID = e.currentTarget.getAttribute("video-index");
+    const handleVideoClick = (e) => {
+        const videoID = e.currentTarget.getAttribute('video-index');
         setShowVideoDetails(
             <>
                 <VideoDetails
@@ -34,7 +34,8 @@ const Members = () => {
                 />
                 <button
                     className='members__back-button'
-                    onClick={() => backButtonClicked()}>
+                    onClick={() => backButtonClicked()}
+                >
                     Back to Videos
                 </button>
             </>
@@ -45,7 +46,7 @@ const Members = () => {
     const [showVideos, setShowVideos] = useState(videos[0]);
 
     // controls heading to display depending on selected grade
-    const [videosHeading, setVideosHeading] = useState("Kindergarten");
+    const [videosHeading, setVideosHeading] = useState('Kindergarten');
 
     // controls which video to display details page from user click
     const [showVideoDetails, setShowVideoDetails] = useState(null);
@@ -58,16 +59,16 @@ const Members = () => {
     const [invalidLogin, setInvalidLogin] = useState(false);
 
     useEffect(() => {
-        setIsLoggedIn(JSON.parse(window.sessionStorage.getItem("isLoggedIn")));
+        setIsLoggedIn(JSON.parse(window.sessionStorage.getItem('isLoggedIn')));
     }, []);
 
     useEffect(() => {
-        window.sessionStorage.setItem("isLoggedIn", isLoggedIn);
+        window.sessionStorage.setItem('isLoggedIn', isLoggedIn);
     }, [isLoggedIn]);
 
     // checks if password input is valid password and updates state if so
-    const handleLogIn = password => {
-        passwords.forEach(validPassword =>
+    const handleLogIn = (password) => {
+        passwords.forEach((validPassword) =>
             password === validPassword.toLowerCase()
                 ? setIsLoggedIn(true)
                 : setInvalidLogin(true)
@@ -76,7 +77,7 @@ const Members = () => {
 
     return (
         <>
-            <div style={{ display: isLoggedIn ? "none" : null }}>
+            <div style={{ display: isLoggedIn ? 'none' : null }}>
                 <Login
                     handleLogIn={handleLogIn}
                     invalidLogin={invalidLogin}
@@ -94,9 +95,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[0],
-                                            "Kindergarten"
+                                            'Kindergarten'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Kindergarten
                                 </button>
                             </li>
@@ -106,9 +108,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[1],
-                                            "Grade 1"
+                                            'Grade 1'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 1
                                 </button>
                             </li>
@@ -118,9 +121,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[2],
-                                            "Grade 2"
+                                            'Grade 2'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 2
                                 </button>
                             </li>
@@ -130,9 +134,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[3],
-                                            "Grade 3"
+                                            'Grade 3'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 3
                                 </button>
                             </li>
@@ -142,9 +147,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[4],
-                                            "Grade 4"
+                                            'Grade 4'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 4
                                 </button>
                             </li>
@@ -154,9 +160,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[5],
-                                            "Grade 5"
+                                            'Grade 5'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 5
                                 </button>
                             </li>
@@ -166,9 +173,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[6],
-                                            "Grade 6"
+                                            'Grade 6'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Grade 6
                                 </button>
                             </li>
@@ -178,9 +186,10 @@ const Members = () => {
                                     onClick={() => {
                                         handleGradeButtonClick(
                                             videos[7],
-                                            "Technology"
+                                            'Technology'
                                         );
-                                    }}>
+                                    }}
+                                >
                                     Technology
                                 </button>
                             </li>
@@ -202,7 +211,7 @@ const Members = () => {
                                             thumbnail={video.thumbnail}
                                             title={video.title}
                                             description={video.description}
-                                            handleVideoClick={event => {
+                                            handleVideoClick={(event) => {
                                                 handleVideoClick(event);
                                             }}
                                         />

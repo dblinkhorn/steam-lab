@@ -1,66 +1,66 @@
 .video-card__container {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 300px;
-  cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+    cursor: pointer;
 }
 
 .video-card__container .video-card__description {
-  transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .video-card__container:hover .video-card__description {
-  background-color: #0086bb;
-  transition: all 0.2s ease-out;
+    background-color: #0086bb;
+    transition: all 0.2s ease-out;
 }
 
 .video-card__container:hover .video-card__thumbnail {
-  opacity: 0.88;
-  transition: all 0.2s ease-out;
+    opacity: 0.88;
+    transition: all 0.2s ease-out;
 }
 
 .video-card__thumbnail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 225px;
-  background-color: #eee;
-  border-radius: 45px 45px 0px 0px;
-  transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    background-color: #eee;
+    border-radius: 45px 45px 0px 0px;
+    transition: all 0.2s ease-out;
 }
 
 .video-card__thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 45px 45px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px 45px 0px 0px;
 }
 
 .video-card__thumbnail:hover {
-  opacity: 0.88;
-  transition: all 0.2s ease-out;
+    opacity: 0.88;
+    transition: all 0.2s ease-out;
 }
 
 .video-card__description {
-  display: block;
-  height: 120px;
-  background-color: #0075a3;
-  border-radius: 0px 0px 45px 45px;
-  padding: 20px;
-  color: white;
-  border-top-style: solid;
-  border-color: white;
-  border-width: 1px;
+    display: block;
+    height: 120px;
+    background-color: #0075a3;
+    border-radius: 0px 0px 45px 45px;
+    padding: 20px;
+    color: white;
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
 .video-card__description h3 {
-  margin: 0px 10px 10px 10px
+    margin: 0px 10px 10px 10px;
 }
 
 .video-card__title {
-  text-align: center;
+    text-align: center;
 }
 
 .video-card__text {
-  margin-top: 12px;
+    margin-top: 12px;
 }
