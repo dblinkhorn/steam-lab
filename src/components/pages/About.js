@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import JoePhoto from '../../static/images/joe_reed.jpg';
-import TishPhoto from '../../static/images/tish_reed.jpg';
+import Joe from '../../static/images/joe_reed.jpg';
+import Tish from '../../static/images/tish_reed.jpg';
 
 const About = () => {
     React.useEffect(() => {
@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <div className='about__joe-container'>
                 <div className='about__joe-image'>
-                    <img src={JoePhoto} alt='Joe Reed' />
+                    <img src={Joe} alt='Joe Reed' />
                     <p className='about__name-text'>Joe Reed</p>
                 </div>
                 <div className='about__text'>
@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div className='about__tish-container'>
                 <div className='about__tish-image'>
-                    <img src={TishPhoto} alt='Tish Reed' />
+                    <img src={Tish} alt='Tish Reed' />
                     <p className='about__name-text'>Tish Reed</p>
                 </div>
                 <div className='about__text'>

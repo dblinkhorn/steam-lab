@@ -24,9 +24,14 @@ const Samples = () => {
             <>
                 <VideoDetails
                     video_title={
-                        videoIndex === 0 ? 'Design an Umbrella' : 'Catapults'
+                        videoIndex === '0' ? 'Design an Umbrella' : 'Catapults'
                     }
                     // video_url={showVideos[videoID].url}
+                    video_resources={
+                        videoIndex === '0'
+                            ? videos[0][0].resource
+                            : videos[3][1].resource
+                    }
                 />
                 <button
                     className='members__back-button'
@@ -53,7 +58,13 @@ const Samples = () => {
                 {!showVideoDetails && (
                     <div className='samples__video-title'>Sample Lessons</div>
                 )}
-                <div className='samples__videos'>
+                <div
+                    className={
+                        showVideoDetails
+                            ? 'samples__videos'
+                            : 'samples__videos cards-gap cards-padding'
+                    }
+                >
                     {showVideoDetails ? (
                         showVideoDetails
                     ) : (
