@@ -16,10 +16,16 @@
     height: calc(100vh - 395px);
 }
 
+@media (max-device-height: 915px), screen and (orientation: portrait) {
+    .footer_fill {
+        min-height: 0px;
+        height: 100%;
+    }
+}
+
 @media (max-width: 690px) {
     .samples__outer-container {
         min-height: 0px;
-        height: 100%;
     }
 }
 

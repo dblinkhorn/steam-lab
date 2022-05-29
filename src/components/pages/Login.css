@@ -6,6 +6,13 @@
     height: calc(100vh - 395px);
 }
 
+@media (max-device-height: 915px), screen and (orientation: portrait) {
+    .login__outer-container {
+        min-height: 0px;
+        height: 100%;
+    }
+}
+
 @media (max-width: 690px) {
     .login__outer-container {
         min-height: 0px;
