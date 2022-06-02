@@ -68,10 +68,10 @@ const ContactForm = () => {
                 }}
                 validationSchema={Yup.object({
                     firstName: Yup.string()
-                        .max(15, "* Must be 15 characters or less")
+                        .max(25, "* Must be 25 characters or less")
                         .required("* Required"),
                     lastName: Yup.string()
-                        .max(20, "* Must be 20 characters or less")
+                        .max(25, "* Must be 25 characters or less")
                         .required("* Required"),
                     email: Yup.string()
                         .email("* Invalid email address")
@@ -81,8 +81,7 @@ const ContactForm = () => {
                         "* Invalid phone number"
                     ),
                 })}
-                onSubmit={async (values, { setSubmitting }) => {
-                    await new Promise(r => setTimeout(r, 500));
+                onSubmit={(values, { setSubmitting }) => {
                     const formParams = {
                         firstName: values.firstName,
                         lastName: values.lastName,
