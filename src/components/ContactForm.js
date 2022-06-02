@@ -1,6 +1,7 @@
-import { Formik, Form, useField } from 'formik';
-import * as Yup from 'yup';
-import './ContactForm.css';
+import { Formik, Form, useField } from "formik";
+import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
+import "./ContactForm.css";
 
 const TextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
@@ -28,7 +29,7 @@ const PhoneInput = ({ label, ...props }) => {
                 {meta.touched && meta.error ? (
                     <div className='error'>{meta.error}</div>
                 ) : (
-                    '(optional)'
+                    "(optional)"
                 )}
             </div>
             <input className='text-input' {...field} {...props} />
@@ -37,36 +38,60 @@ const PhoneInput = ({ label, ...props }) => {
 };
 
 const ContactForm = () => {
+    const sendEmail = formValues => {
+        emailjs
+            .send(
+                "service_lw3cijd",
+                "template_itwcwsl",
+                formValues,
+                "cReGtDoZbnriQ2erv"
+            )
+            .then(
+                result => {
+                    console.log(result.text);
+                },
+                error => {
+                    console.log(error.text);
+                }
+            );
+    };
+
     return (
         <div className='contact__form-inner-container'>
             <div className='contact__heading'>Contact Us</div>
             <Formik
                 initialValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    phoneNumber: '',
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    phoneNumber: "",
                 }}
                 validationSchema={Yup.object({
                     firstName: Yup.string()
-                        .max(15, '* Must be 15 characters or less')
-                        .required('* Required'),
+                        .max(15, "* Must be 15 characters or less")
+                        .required("* Required"),
                     lastName: Yup.string()
-                        .max(20, '* Must be 20 characters or less')
-                        .required('* Required'),
+                        .max(20, "* Must be 20 characters or less")
+                        .required("* Required"),
                     email: Yup.string()
-                        .email('* Invalid email address')
-                        .required('* Required'),
+                        .email("* Invalid email address")
+                        .required("* Required"),
                     phoneNumber: Yup.string().matches(
                         /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                        '* Invalid phone number'
+                        "* Invalid phone number"
                     ),
                 })}
                 onSubmit={async (values, { setSubmitting }) => {
-                    await new Promise((r) => setTimeout(r, 500));
+                    await new Promise(r => setTimeout(r, 500));
+                    const formParams = {
+                        firstName: values.firstName,
+                        lastName: values.lastName,
+                        email: values.email,
+                        phoneNumber: values.phoneNumber,
+                    };
+                    sendEmail(formParams);
                     setSubmitting(false);
-                }}
-            >
+                }}>
                 <div className='contact__form-container'>
                     <div className='contact__message'>
                         Please provide your contact information below and we
@@ -102,8 +127,7 @@ const ContactForm = () => {
                         <div className='contact__submit-container'>
                             <button
                                 className='contact__submit-button'
-                                type='submit'
-                            >
+                                type='submit'>
                                 Submit
                             </button>
                         </div>
