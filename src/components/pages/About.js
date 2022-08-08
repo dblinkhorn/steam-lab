@@ -1,7 +1,7 @@
-import React from 'react';
-import './About.css';
-import Joe from '../../static/images/joe_reed.jpg';
-import Tish from '../../static/images/tish_reed.jpg';
+import React from "react";
+import "./About.css";
+import Joe from "../../static/images/joe_reed.jpg";
+import Tish from "../../static/images/tish_reed.jpg";
 
 const About = () => {
     React.useEffect(() => {

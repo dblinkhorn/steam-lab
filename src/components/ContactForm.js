@@ -1,4 +1,5 @@
 import { Formik, Form, useField } from "formik";
+import { useState, useEffect } from "react";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
@@ -38,19 +39,46 @@ const PhoneInput = ({ label, ...props }) => {
 };
 
 const ContactForm = () => {
+    const [showSuccessPage, setShowSuccessPage] = useState(false);
+    const [countdownValue, setCountdownValue] = useState(10);
+
+    const timeoutMessage = `You will be redirected to the home page in ${countdownValue}`;
+
+    // redirects to home page after countdown ends
+    useEffect(() => {
+        if (countdownValue === 0) {
+            window.location = "/";
+        }
+    });
+
+    // countdown timer before redirect
+    const countdownTimer = countdownValue => {
+        let counter = countdownValue;
+        setInterval(() => {
+            setCountdownValue(counter);
+            counter--;
+        }, 1000);
+    };
+
     const sendEmail = formValues => {
         emailjs
             .send(
-                "service_y4xngug",
-                "template_ywp4ga2",
+                // "service_y4xngug",
+                // "template_ywp4ga2",
+                // formValues,
+                // "NJynmtQghU3G96OpJ"
+                "service_lw3cijd",
+                "template_itwcwsl",
                 formValues,
-                "NJynmtQghU3G96OpJ"
+                "cReGtDoZbnriQ2erv"
             )
             .then(
-                result => {
-                    console.log(result.text);
+                () => {
+                    setShowSuccessPage(true);
+                    countdownTimer(9);
                 },
                 error => {
+                    // need to handle this
                     console.log(error.text);
                 }
             );
@@ -58,81 +86,106 @@ const ContactForm = () => {
 
     return (
         <div className='contact__form-inner-container'>
-            <div className='contact__heading'>Contact Us</div>
-            <Formik
-                initialValues={{
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    phoneNumber: "",
-                }}
-                validationSchema={Yup.object({
-                    firstName: Yup.string()
-                        .max(25, "* Must be 25 characters or less")
-                        .required("* Required"),
-                    lastName: Yup.string()
-                        .max(25, "* Must be 25 characters or less")
-                        .required("* Required"),
-                    email: Yup.string()
-                        .email("* Invalid email address")
-                        .required("* Required"),
-                    phoneNumber: Yup.string().matches(
-                        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                        "* Invalid phone number"
-                    ),
-                })}
-                onSubmit={(values, { setSubmitting }) => {
-                    const formParams = {
-                        firstName: values.firstName,
-                        lastName: values.lastName,
-                        email: values.email,
-                        phoneNumber: values.phoneNumber,
-                    };
-                    sendEmail(formParams);
-                    setSubmitting(false);
-                }}>
+            {showSuccessPage ? (
                 <div className='contact__form-container'>
-                    <div className='contact__message'>
-                        Please provide your contact information below and we
-                        will be in touch to discuss any questions you may have
-                        about Mr Reed's STEAM Lab.
-                        <p>We look foward to hearing from you!</p>
-                    </div>
-                    <Form className='contact__form'>
-                        <TextInput
-                            label='First Name'
-                            name='firstName'
-                            type='text'
-                            placeholder='First name'
-                        />
-                        <TextInput
-                            label='Last Name'
-                            name='lastName'
-                            type='text'
-                            placeholder='Last name'
-                        />
-                        <TextInput
-                            label='Email Address'
-                            name='email'
-                            type='email'
-                            placeholder='email@example.com'
-                        />
-                        <PhoneInput
-                            label='Phone Number'
-                            name='phoneNumber'
-                            type='tel'
-                            placeholder='(555) 555-5555'
-                        />
-                        <div className='contact__submit-container'>
-                            <button
-                                className='contact__submit-button'
-                                type='submit'>
-                                Submit
-                            </button>
+                    <div className='contact__message margin-fix'>
+                        Thank you for your interest in Mr Reed's STEAM Lab!
+                        <p>
+                            We have successfully received your inquiry and will
+                            be in touch soon.
+                        </p>
+                        <div className='contact__button-countdown-container margin-top'>
+                            <div className='contact__countdown-container'>
+                                {timeoutMessage}
+                            </div>
+                            <div className='contact__submit-container'>
+                                <button className='contact__submit-button'>
+                                    Continue
+                                </button>
+                            </div>
                         </div>
-                    </Form>
+                    </div>
                 </div>
-            </Formik>
+            ) : (
+                <>
+                    <div className='contact__heading'>Contact Us</div>
+                    <Formik
+                        initialValues={{
+                            firstName: "",
+                            lastName: "",
+                            email: "",
+                            phoneNumber: "",
+                        }}
+                        validationSchema={Yup.object({
+                            firstName: Yup.string()
+                                .max(25, "* Must be 25 characters or less")
+                                .required("* Required"),
+                            lastName: Yup.string()
+                                .max(25, "* Must be 25 characters or less")
+                                .required("* Required"),
+                            email: Yup.string()
+                                .email("* Invalid email address")
+                                .required("* Required"),
+                            phoneNumber: Yup.string().matches(
+                                /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+                                "* Invalid phone number"
+                            ),
+                        })}
+                        onSubmit={(values, { setSubmitting }) => {
+                            const formParams = {
+                                firstName: values.firstName,
+                                lastName: values.lastName,
+                                email: values.email,
+                                phoneNumber: values.phoneNumber,
+                            };
+                            sendEmail(formParams);
+                            setSubmitting(false);
+                        }}>
+                        <div className='contact__form-container'>
+                            <div className='contact__message'>
+                                Please provide your contact information below
+                                and we will be in touch to discuss any questions
+                                you may have about Mr Reed's STEAM Lab.
+                                <p>We look foward to hearing from you!</p>
+                            </div>
+                            <Form className='contact__form'>
+                                <TextInput
+                                    autoFocus
+                                    label='First Name'
+                                    name='firstName'
+                                    type='text'
+                                    placeholder='First name'
+                                />
+                                <TextInput
+                                    label='Last Name'
+                                    name='lastName'
+                                    type='text'
+                                    placeholder='Last name'
+                                />
+                                <TextInput
+                                    label='Email Address'
+                                    name='email'
+                                    type='email'
+                                    placeholder='email@example.com'
+                                />
+                                <PhoneInput
+                                    label='Phone Number'
+                                    name='phoneNumber'
+                                    type='tel'
+                                    placeholder='(555) 555-5555'
+                                />
+                                <div className='contact__submit-container'>
+                                    <button
+                                        className='contact__submit-button'
+                                        type='submit'>
+                                        Submit
+                                    </button>
+                                </div>
+                            </Form>
+                        </div>
+                    </Formik>
+                </>
+            )}
         </div>
     );
 };

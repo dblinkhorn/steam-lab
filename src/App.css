@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'quicksand-light';
+    font-family: "quicksand-light";
     src: url(./fonts/Quicksand-Light.ttf);
 }
 
 @font-face {
-    font-family: 'quicksand-regular';
+    font-family: "quicksand-regular";
     src: url(./fonts/Quicksand-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'quicksand-medium';
+    font-family: "quicksand-medium";
     src: url(./fonts/Quicksand-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'quicksand-bold';
+    font-family: "quicksand-bold";
     src: url(./fonts/Quicksand-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'quicksand-semi-bold';
+    font-family: "quicksand-semi-bold";
     src: url(./fonts/Quicksand-SemiBold.ttf);
 }
 
@@ -34,13 +34,13 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'quicksand-regular';
+    font-family: "quicksand-regular";
     background-position: center;
     background-image: linear-gradient(
             rgba(40, 114, 146, 0.35),
             rgba(40, 114, 146, 0.35)
         ),
-        url('./static/images/circles_bg.png');
+        url("./static/images/circles_bg.png");
     height: 100%;
     width: 100%;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .nav-button {
-    font-family: 'quicksand-bold';
+    font-family: "quicksand-bold";
     user-select: none;
     font-size: 1.25em;
     padding-bottom: 4px;
@@ -174,9 +174,9 @@ a {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: 'quicksand-regular';
+    font-family: "quicksand-regular";
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 750;
     height: 50px;
     letter-spacing: normal;
     line-height: 1.5;

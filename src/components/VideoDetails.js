@@ -1,14 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
-import './VideoDetails.css';
-import './Offerings.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import "./VideoDetails.css";
+import "./Offerings.css";
 
 const iconStyling = {
-    padding: '12px',
+    padding: "12px",
 };
 
-const VideoDetails = (props) => {
+const VideoDetails = props => {
     React.useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -24,8 +24,7 @@ const VideoDetails = (props) => {
                         className='video-mask'
                         playsInline
                         controls
-                        style={{ opacity: 1, width: '100%' }}
-                    >
+                        style={{ opacity: 1, width: "100%" }}>
                         <source src={video_url} type='video/mp4' />
                     </video>
                 </div>

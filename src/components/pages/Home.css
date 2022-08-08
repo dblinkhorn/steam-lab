@@ -16,7 +16,7 @@
     margin: 0px;
     padding: 0px 20px 20px 20px;
     font-size: 5em;
-    font-family: 'quicksand-bold';
+    font-family: "quicksand-bold";
 }
 
 @media (max-width: 600px) {
@@ -120,7 +120,7 @@
 }
 
 .button-sample-lessons:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 1.5em;
     left: 1.67em;

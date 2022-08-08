@@ -1,8 +1,8 @@
-import React from 'react';
-import RocketLogo from '../../static/images/rocket_logo.png';
-import ChemistryGirls from '../../static/images/chemistry-girls.jpg';
-import KidsReading from '../../static/images/kids_reading.jpg';
-import './Mission.css';
+import React from "react";
+import RocketLogo from "../../static/images/rocket_logo.png";
+import ChemistryGirls from "../../static/images/chemistry-girls.jpg";
+import KidsReading from "../../static/images/kids_reading.jpg";
+import "./Mission.css";
 
 const Mission = () => {
     React.useEffect(() => {
@@ -218,7 +218,7 @@ const Mission = () => {
                                 Lives. Washington, DC: The National Academies
                                 Press.
                                 <br />
-                                Source:{' '}
+                                Source:{" "}
                                 <a href='https://doi.org/10.17226/25182'>
                                     https://doi.org/10.17226/25182
                                 </a>

@@ -1,7 +1,7 @@
-import React from 'react';
-import './VideoCard.css';
+import React from "react";
+import "./VideoCard.css";
 
-const VideoCard = (props) => {
+const VideoCard = props => {
     const { videoIndex, thumbnail, description, title, handleVideoClick, e } =
         props;
 
@@ -9,8 +9,7 @@ const VideoCard = (props) => {
         <div
             className='video-card__container'
             video-index={videoIndex}
-            onClick={(e) => handleVideoClick(e)}
-        >
+            onClick={e => handleVideoClick(e)}>
             <div className='video-card__thumbnail'>
                 <img src={thumbnail} />
             </div>

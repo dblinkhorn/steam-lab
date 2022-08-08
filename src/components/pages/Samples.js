@@ -19,7 +19,6 @@ const Samples = () => {
 
     const handleVideoClick = e => {
         const videoIndex = e.currentTarget.getAttribute("video-index");
-        console.log(videoIndex);
         setShowVideoDetails(
             <>
                 <VideoDetails
