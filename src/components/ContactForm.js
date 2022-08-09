@@ -47,7 +47,7 @@ const ContactForm = () => {
     // redirects to home page after countdown ends
     useEffect(() => {
         if (countdownValue === 0) {
-            window.location = "/";
+            window.location = "/steam-lab";
         }
     });
 
@@ -101,7 +101,9 @@ const ContactForm = () => {
                             <div className='contact__submit-container'>
                                 <button
                                     className='contact__submit-button'
-                                    onClick={() => (window.location = "/")}>
+                                    onClick={() =>
+                                        (window.location = "/steam-lab")
+                                    }>
                                     Continue
                                 </button>
                             </div>
