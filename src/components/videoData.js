@@ -459,8 +459,9 @@ const videos = [
         {
             id: "tech-1",
             thumbnail: Ozobots,
-            title: "Straw Rockets",
-            description: "Design and engineer a high flying rocket.",
+            title: "Ozobots",
+            description:
+                "Students use color combinations to code these small robots.  Blends the physical and digital world, the combinations are endless.",
             resource: null,
         },
         {
@@ -468,7 +469,7 @@ const videos = [
             thumbnail: CodingMouse,
             title: "Coding Mouse Introduction",
             description:
-                "How do parachutes help people land safely after jumping out of a plane?",
+                "Teaches primary students screen-free coding skills with easy-to-use buttons and fun lights and sounds.",
             resource: null,
         },
         {
@@ -476,7 +477,7 @@ const videos = [
             thumbnail: LittleBits,
             title: "LittleBits Engineering",
             description:
-                "Explore different types of bridges and build the strongest bridge ever.",
+                "Students use modular electronic bits to build inventions. Circuitry and electronics come to life.",
             resource: null,
         },
     ],

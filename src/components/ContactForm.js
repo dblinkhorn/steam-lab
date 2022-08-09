@@ -42,7 +42,7 @@ const ContactForm = () => {
     const [showSuccessPage, setShowSuccessPage] = useState(false);
     const [countdownValue, setCountdownValue] = useState(10);
 
-    const timeoutMessage = `You will be redirected to the home page in ${countdownValue}`;
+    const timeoutMessage = `You will be redirected to the home page in ${countdownValue} seconds...`;
 
     // redirects to home page after countdown ends
     useEffect(() => {
@@ -99,7 +99,9 @@ const ContactForm = () => {
                                 {timeoutMessage}
                             </div>
                             <div className='contact__submit-container'>
-                                <button className='contact__submit-button'>
+                                <button
+                                    className='contact__submit-button'
+                                    onClick={() => (window.location = "/")}>
                                     Continue
                                 </button>
                             </div>
