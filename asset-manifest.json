@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/steam-lab/static/css/main.53db47fe.css",
-    "main.js": "/steam-lab/static/js/main.1079db4f.js",
+    "main.css": "/steam-lab/static/css/main.b6275ea6.css",
+    "main.js": "/steam-lab/static/js/main.bb691bbd.js",
     "static/media/Second-Grade-Frogs-Tongue.pdf": "/steam-lab/static/media/Second-Grade-Frogs-Tongue.b8d92046a51983b416ce.pdf",
     "static/media/kids-home2.png": "/steam-lab/static/media/kids-home2.da3e7dd67de8133b9e04.png",
     "static/media/Second-Grade-Bees-and-Pollination.pdf": "/steam-lab/static/media/Second-Grade-Bees-and-Pollination.e7b5063ce911523da860.pdf",
@@ -104,11 +104,11 @@
     "static/media/tish_reed.jpg": "/steam-lab/static/media/tish_reed.eb1a585d9cff9ec8d629.jpg",
     "static/media/kids_reading.jpg": "/steam-lab/static/media/kids_reading.de86590e4bc1a339a0e6.jpg",
     "index.html": "/steam-lab/index.html",
-    "main.53db47fe.css.map": "/steam-lab/static/css/main.53db47fe.css.map",
-    "main.1079db4f.js.map": "/steam-lab/static/js/main.1079db4f.js.map"
+    "main.b6275ea6.css.map": "/steam-lab/static/css/main.b6275ea6.css.map",
+    "main.bb691bbd.js.map": "/steam-lab/static/js/main.bb691bbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.53db47fe.css",
-    "static/js/main.1079db4f.js"
+    "static/css/main.b6275ea6.css",
+    "static/js/main.bb691bbd.js"
   ]
 }
