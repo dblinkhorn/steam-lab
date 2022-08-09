@@ -4,10 +4,6 @@ import React from "react";
 import "./VideoDetails.css";
 import "./Offerings.css";
 
-const iconStyling = {
-    padding: "12px",
-};
-
 const VideoDetails = props => {
     React.useEffect(() => {
         window.scrollTo(0, 0);
