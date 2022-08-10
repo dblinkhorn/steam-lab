@@ -49,8 +49,7 @@
     }
 }
 
-.footer__steam-lab,
-.footer__legal {
+.footer__steam-lab {
     display: flex;
     justify-content: center;
     align-self: flex-start;
@@ -58,8 +57,7 @@
 }
 
 @media (max-width: 500px) {
-    .footer__steam-lab,
-    .footer__legal {
+    .footer__steam-lab {
         max-width: 120px;
         justify-content: center;
     }
@@ -78,14 +76,18 @@
     align-items: flex-end;
 }
 
-.footer_section-title {
+.footer__section-title {
     font-weight: bold;
     font-size: 1.25em;
     margin-left: 20px;
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding-bottom: 15px;
 }
 
 @media (max-width: 500px) {
-    .footer_section-title {
+    .footer__section-title {
         margin: 0px;
     }
 }

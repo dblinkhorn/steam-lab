@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='footer__container'>
             <div className='footer__main'>
                 <div className='footer__steam-lab'>
-                    <span className='footer_section-title'>Site Links</span>
+                    <span className='footer__section-title'>Site Links</span>
                     <ul>
                         <li>
                             <Link className='white' to='/'>

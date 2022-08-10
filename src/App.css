@@ -258,6 +258,7 @@ a {
     transform: scale(1.5);
     height: 24px;
     width: 24px;
+    outline: none;
 }
 
 /* Color/shape of close button cross */
@@ -296,6 +297,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: white !important;
     font-weight: bolder;
     padding-bottom: 16px;
+    outline: none;
 }
 
 /* Styling of overlay */

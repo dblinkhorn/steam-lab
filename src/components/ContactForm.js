@@ -41,8 +41,9 @@ const PhoneInput = ({ label, ...props }) => {
 const ContactForm = () => {
     const [showSuccessPage, setShowSuccessPage] = useState(false);
     const [countdownValue, setCountdownValue] = useState(10);
+    const [errorMessage, setErrorMessage] = useState("");
 
-    const timeoutMessage = `You will be redirected to the home page in ${countdownValue} seconds...`;
+    const timeoutMessage = `* You will be redirected to the home page in ${countdownValue} seconds...`;
 
     // redirects to home page after countdown ends
     useEffect(() => {
@@ -78,8 +79,10 @@ const ContactForm = () => {
                     countdownTimer(9);
                 },
                 error => {
-                    // need to handle this
                     console.log(error.text);
+                    setErrorMessage(
+                        "* Sorry, something went wrong. Please try again."
+                    );
                 }
             );
     };
@@ -179,11 +182,16 @@ const ContactForm = () => {
                                     placeholder='(555) 555-5555'
                                 />
                                 <div className='contact__submit-container'>
-                                    <button
-                                        className='contact__submit-button'
-                                        type='submit'>
-                                        Submit
-                                    </button>
+                                    <div className='contact__error-message error'>
+                                        {errorMessage}
+                                    </div>
+                                    <div className='contact__submit-button-container'>
+                                        <button
+                                            className='contact__submit-button'
+                                            type='submit'>
+                                            Submit
+                                        </button>
+                                    </div>
                                 </div>
                             </Form>
                         </div>
