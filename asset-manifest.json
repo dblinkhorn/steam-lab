@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/steam-lab/static/css/main.b6275ea6.css",
-    "main.js": "/steam-lab/static/js/main.f7f6240a.js",
+    "main.js": "/steam-lab/static/js/main.0186690c.js",
     "static/media/Second-Grade-Frogs-Tongue.pdf": "/steam-lab/static/media/Second-Grade-Frogs-Tongue.b8d92046a51983b416ce.pdf",
     "static/media/kids-home2.png": "/steam-lab/static/media/kids-home2.da3e7dd67de8133b9e04.png",
     "static/media/Second-Grade-Bees-and-Pollination.pdf": "/steam-lab/static/media/Second-Grade-Bees-and-Pollination.e7b5063ce911523da860.pdf",
@@ -105,10 +105,10 @@
     "static/media/kids_reading.jpg": "/steam-lab/static/media/kids_reading.de86590e4bc1a339a0e6.jpg",
     "index.html": "/steam-lab/index.html",
     "main.b6275ea6.css.map": "/steam-lab/static/css/main.b6275ea6.css.map",
-    "main.f7f6240a.js.map": "/steam-lab/static/js/main.f7f6240a.js.map"
+    "main.0186690c.js.map": "/steam-lab/static/js/main.0186690c.js.map"
   },
   "entrypoints": [
     "static/css/main.b6275ea6.css",
-    "static/js/main.f7f6240a.js"
+    "static/js/main.0186690c.js"
   ]
 }
