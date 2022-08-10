@@ -145,9 +145,9 @@ const videos = [
         {
             id: "kinder-4",
             thumbnail: PingPong,
-            title: "Play Doh Straw Maze",
+            title: "Ping Pong Ball Maze",
             description:
-                "Design a maze that uses motion and stability to move a ping pong ball",
+                "Design a maze that uses motion and stability to move a ping pong ball.",
             resource: PingPongResource,
         },
         {

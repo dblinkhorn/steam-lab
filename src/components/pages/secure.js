@@ -1,9 +1,8 @@
 export const passwords = [
     "sophiejune",
-    "steamlab1956",
-    "smbsdases",
-    "busdjefferson",
-    "smbsdadam",
+    "adam2022",
+    "jefferson2022",
+    "fairlawnpilot",
 ];
 
 export default {};
