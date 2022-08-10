@@ -8,13 +8,13 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    width: 80%;
+    width: 55%;
     padding: 30px;
 }
 
 @media (max-width: 1500px) {
     .video-details__inner-container {
-        width: 90%;
+        width: 65%;
     }
 }
 
