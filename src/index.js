@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Mission from "./components/pages/Mission";
 import About from "./components/pages/About";
@@ -11,7 +11,7 @@ import Login from "./components/pages/Login";
 import App from "./App";
 
 ReactDOM.render(
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
             <Route path='/' element={<App />}>
                 <Route index element={<Home />} />
@@ -23,6 +23,6 @@ ReactDOM.render(
                 <Route path='/login' element={<Login />} />
             </Route>
         </Routes>
-    </HashRouter>,
+    </BrowserRouter>,
     document.getElementById("root")
 );
