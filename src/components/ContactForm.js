@@ -48,7 +48,7 @@ const ContactForm = () => {
     // redirects to home page after countdown ends
     useEffect(() => {
         if (countdownValue === 0) {
-            window.location = "/";
+            window.location = "";
         }
     });
 
