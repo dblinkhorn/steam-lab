@@ -48,7 +48,7 @@ const ContactForm = () => {
     // redirects to home page after countdown ends
     useEffect(() => {
         if (countdownValue === 0) {
-            window.location = "";
+            window.location = "../";
         }
     });
 
@@ -64,14 +64,14 @@ const ContactForm = () => {
     const sendEmail = formValues => {
         emailjs
             .send(
-                "service_y4xngug",
-                "template_ywp4ga2",
-                formValues,
-                "NJynmtQghU3G96OpJ"
-                // "service_lw3cijd",
-                // "template_itwcwsl",
+                // "service_y4xngug",
+                // "template_ywp4ga2",
                 // formValues,
-                // "cReGtDoZbnriQ2erv"
+                // "NJynmtQghU3G96OpJ"
+                "service_lw3cijd",
+                "template_itwcwsl",
+                formValues,
+                "cReGtDoZbnriQ2erv"
             )
             .then(
                 () => {
