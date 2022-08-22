@@ -64,14 +64,17 @@ const ContactForm = () => {
     const sendEmail = formValues => {
         emailjs
             .send(
-                // "service_y4xngug",
-                // "template_ywp4ga2",
-                // formValues,
-                // "NJynmtQghU3G96OpJ"
-                "service_lw3cijd",
-                "template_itwcwsl",
+                // real emailjs
+                "service_y4xngug",
+                "template_ywp4ga2",
                 formValues,
-                "cReGtDoZbnriQ2erv"
+                "NJynmtQghU3G96OpJ"
+
+                // test emailjs
+                // "service_lw3cijd",
+                // "template_itwcwsl",
+                // formValues,
+                // "cReGtDoZbnriQ2erv"
             )
             .then(
                 () => {
