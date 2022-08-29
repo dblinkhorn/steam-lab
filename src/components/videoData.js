@@ -213,7 +213,7 @@ const videos = [
             title: "Kazoos!",
             description: "Make some music by creating your own kazoo.",
             resource: KazoosResource,
-            url: "https://d3osj96r0ys8vy.cloudfront.net/steam-lab-videos/first/first-6-kazoos.mp4",
+            url: "first/first-6-kazoos.mp4",
         },
     ],
     [

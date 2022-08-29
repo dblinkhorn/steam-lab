@@ -11,6 +11,9 @@ const VideoDetails = props => {
 
     const { video_title, video_url, video_resources } = props;
 
+    const cloudFrontBaseURL =
+        "dh40o6ol29pzy.cloudfront.net/first/first-6-kazoos.mp4";
+
     return (
         <div className='video-details__outer-container'>
             <div className='video-details__inner-container'>
@@ -21,7 +24,10 @@ const VideoDetails = props => {
                         playsInline
                         controls
                         style={{ opacity: 1, width: "100%" }}>
-                        <source src={video_url} type='video/mp4' />
+                        <source
+                            src={cloudFrontBaseURL + video_url}
+                            type='video/mp4'
+                        />
                     </video>
                 </div>
                 {/* technology videos have no additional resources; don't render this */}
