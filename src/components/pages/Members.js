@@ -29,7 +29,7 @@ const Members = () => {
             <>
                 <VideoDetails
                     video_title={showVideos[videoID].title}
-                    // video_url={showVideos[videoID].url}
+                    video_url={showVideos[videoID].url}
                     video_resources={showVideos[videoID].resource}
                 />
                 <button
