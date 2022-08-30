@@ -77,7 +77,7 @@ const Home = () => {
                                 Activities created with a easy-to-find materials
                             </li>
                             <li>
-                                Mr Reed demonstrates step-by-step instructions
+                                Mr. Reed demonstrates step-by-step instructions
                                 in every video
                             </li>
                             <li>Six short videos per grade level</li>

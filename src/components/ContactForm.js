@@ -95,7 +95,7 @@ const ContactForm = () => {
             {showSuccessPage ? (
                 <div className='contact__form-container'>
                     <div className='contact__message margin-fix'>
-                        Thank you for your interest in Mr Reed's STEAM Lab!
+                        Thank you for your interest in Mr. Reed's STEAM Lab!
                         <p>
                             We have successfully received your inquiry and will
                             be in touch soon.
@@ -153,7 +153,7 @@ const ContactForm = () => {
                             <div className='contact__message'>
                                 Please provide your contact information below
                                 and we will be in touch to discuss any questions
-                                you may have about Mr Reed's STEAM Lab.
+                                you may have about Mr. Reed's STEAM Lab.
                                 <p>We look foward to hearing from you!</p>
                             </div>
                             <Form className='contact__form'>

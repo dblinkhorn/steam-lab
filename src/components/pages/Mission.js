@@ -90,7 +90,7 @@ const Mission = () => {
                                 racial and ethnic groups.
                             </p>
                             <p>
-                                Mr Reed's STEAM Lab video program poses real
+                                Mr. Reed's STEAM Lab video program poses real
                                 world challenges and asks students to come up
                                 with creative ways to solve these problems. Once
                                 the students are engaged, the teacher has access
@@ -101,15 +101,15 @@ const Mission = () => {
                             </p>
 
                             <p>
-                                Mr Reed's STEAM Lab video program allows schools
-                                and teachers to decide how they best want to
-                                approach the issue of learning loss. Some
-                                researchers feel that students should be
+                                Mr. Reed's STEAM Lab video program allows
+                                schools and teachers to decide how they best
+                                want to approach the issue of learning loss.
+                                Some researchers feel that students should be
                                 presented grade level material and moved
                                 forward. Other philosophies suggest that
                                 students need to fill in gaps missed during
                                 distance learning by providing material from
-                                previous years. Mr Reed's STEAM Lab video
+                                previous years. Mr. Reed's STEAM Lab video
                                 program provides flexibility in that they may be
                                 used to address both philosophies.
                             </p>
@@ -200,7 +200,7 @@ const Mission = () => {
                             </p>
 
                             <p>
-                                Mr Reed's Steam Lab video challenges are
+                                Mr. Reed's STEAM Lab video challenges are
                                 designed to give an immersive experience that EL
                                 students can access, enjoy, and in which they
                                 can experience success. Each activity is

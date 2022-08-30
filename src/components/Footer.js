@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer__copyright'>
-                ©2022 All Rights Reserved, Mr Reed's STEAM Lab
+                ©2022 All Rights Reserved, Mr. Reed's STEAM Lab
             </div>
         </div>
     );

@@ -125,6 +125,7 @@ const videos = [
             title: "Design an Umbrella",
             description: "Explore how to keep a creature dry in a rainstorm.",
             resource: UmbrellaResource,
+            url: "kinder/kinder-1-umbrella.mp4",
         },
         {
             id: "kinder-2",
@@ -133,6 +134,7 @@ const videos = [
             description:
                 "What makes a boat float? Design a boat that can hold the most pennies without sinking.",
             resource: FoilBoatsResource,
+            url: "kinder/kinder-2-buoyancy.mp4",
         },
         {
             id: "kinder-3",
@@ -141,6 +143,7 @@ const videos = [
             description:
                 "The gingerbread man has escaped! Engineer a trap to catch him.",
             resource: GingerbreadManResource,
+            url: "kinder/kinder-3-gingerbread.mp4",
         },
         {
             id: "kinder-4",
@@ -149,6 +152,7 @@ const videos = [
             description:
                 "Design a maze that uses motion and stability to move a ping pong ball.",
             resource: PingPongResource,
+            url: "kinder/kinder-4-ping-pong.mp4",
         },
         {
             id: "kinder-5",
@@ -157,6 +161,7 @@ const videos = [
             description:
                 "Have you ever wondered where rain comes from? Find out in this exploration.",
             resource: WaterCycleResource,
+            url: "kinder/kinder-5-water-cycle.mp4",
         },
         {
             id: "kinder-6",
@@ -165,6 +170,7 @@ const videos = [
             description:
                 "Experience what it feels like to be a whale in the cold ocean water.",
             resource: WhaleBlubberResource,
+            url: "kinder/kinder-6-blubber.mp4",
         },
     ],
     [
@@ -175,6 +181,7 @@ const videos = [
             description:
                 "Are bubbles always round? Explore different ways to create a bubble.",
             resource: BubblesResource,
+            url: "first/first-1-bubbles.mp4",
         },
         {
             id: "first-2",
@@ -183,6 +190,7 @@ const videos = [
             description:
                 "Have fun creating a new creature that uses its parts to survive and grow.",
             resource: CreatureResource,
+            url: "first/first-2-creature.mp4",
         },
         {
             id: "first-3",
@@ -191,6 +199,7 @@ const videos = [
             description:
                 "Create a model to illustrate the steps in a butterfly's life cycle.",
             resource: ButterflyResource,
+            url: "first/first-3-butterfly.mp4",
         },
         {
             id: "first-4",
@@ -199,6 +208,7 @@ const videos = [
             description:
                 "Use Oreos to explore the patterns of the moon in the night sky.",
             resource: MoonResource,
+            url: "first/first-4-moon-phases.mp4",
         },
         {
             id: "first-5",
@@ -206,6 +216,7 @@ const videos = [
             title: "Telephone Communication",
             description: "How does sound move? Build a communication device.",
             resource: TelephoneResource,
+            url: "first/first-5-telephone.mp4",
         },
         {
             id: "first-6",
@@ -224,6 +235,7 @@ const videos = [
             description:
                 "Have you wondered how a frog catches a fly? Find out in this exploration.",
             resource: FrogTongueResource,
+            url: "second/second-1-frogs-tongue.mp4",
         },
         {
             id: "second-2",
@@ -232,6 +244,7 @@ const videos = [
             description:
                 "Create a launcher and see how far you can make your marshmallow fly.",
             resource: MarshmallowLauncherResource,
+            url: "second/second-2-marshmallow-launcher.mp4",
         },
         {
             id: "second-3",
@@ -239,6 +252,7 @@ const videos = [
             title: "Build a Harmonica",
             description: "Explore how to make sound with your own harmonica.",
             resource: HarmonicaResource,
+            url: "second/second-3-harmonica.mp4",
         },
         {
             id: "second-4",
@@ -247,6 +261,7 @@ const videos = [
             description:
                 "Do you live in the mountains, or in a valley, or along the coast? Design and create your own island.",
             resource: LandformsResource,
+            url: "second/second-4-landforms.mp4",
         },
         {
             id: "second-5",
@@ -254,6 +269,7 @@ const videos = [
             title: "Ooblek",
             description: "Not a solid, not a liquid. What is it?",
             resource: OoblekResource,
+            url: "second/second-2-ooblek.mp4",
         },
         {
             id: "second-6",
@@ -262,6 +278,7 @@ const videos = [
             description:
                 "Bees are amazing! Explore how they pollinate the flowers around us.",
             resource: BeesResource,
+            url: "second/second-2-bees.mp4",
         },
     ],
     [
@@ -271,6 +288,7 @@ const videos = [
             title: "Play-Doh Marble Run",
             description: "Use cups and Play-Doh to build a roller coaster.",
             resource: PlayDohMarbleResource,
+            url: "third/third-1-marbles.mp4",
         },
         {
             id: "third-2",
@@ -279,6 +297,7 @@ const videos = [
             description:
                 "Design a zip line carrier that will protect your ping pong ball from a fall.",
             resource: ZipLineResource,
+            url: "third/third-2-zip-line.mp4",
         },
         {
             id: "third-3",
@@ -286,6 +305,7 @@ const videos = [
             title: "Bernoulli Levitator",
             description: "Can you make something float in the air?",
             resource: BernoulliLevitatorResource,
+            url: "third/third-3-bernoulli.mp4",
         },
         {
             id: "third-4",
@@ -294,6 +314,7 @@ const videos = [
             description:
                 "Learn about impression fossils with gummy worms and bread.",
             resource: FossilsResource,
+            url: "third/third-4-fossils.mp4",
         },
         {
             id: "third-5",
@@ -302,6 +323,7 @@ const videos = [
             description:
                 "Test your cup stacking skills against the force of inertia.",
             resource: InertiaResource,
+            url: "third/third-5-inertia.mp4",
         },
         {
             id: "third-6",
@@ -310,6 +332,7 @@ const videos = [
             description:
                 "Why do birds have different shaped beaks? Let's think about their dinner!",
             resource: BirdBeaksResource,
+            url: "third/third-6-bird-beaks.mp4",
         },
     ],
     [
@@ -320,6 +343,7 @@ const videos = [
             description:
                 "Engineer a structure that will survive an earthquake.",
             resource: EarthquakeStructuresResource,
+            url: "fourth/fourth-1-earthquake.mp4",
         },
         {
             id: "fourth-2",
@@ -327,6 +351,7 @@ const videos = [
             title: "Catapults",
             description: "How far can you launch a marshmallow?",
             resource: CatapultsResource,
+            url: "fourth/fourth-2-catapults.mp4",
         },
         {
             id: "fourth-3",
@@ -335,6 +360,7 @@ const videos = [
             description:
                 "Design and create a way to help an astronaut land safely.",
             resource: AstronautLanderResource,
+            url: "fourth/fourth-3-astronaut.mp4",
         },
         {
             id: "fourth-4",
@@ -343,6 +369,7 @@ const videos = [
             description:
                 "Explore the chemistry of lemons to create a volcano and learn about acids and bases.",
             resource: LemonVolcanoResource,
+            url: "fourth/fourth-4-lemon-volcano.mp4",
         },
         {
             id: "fourth-5",
@@ -350,6 +377,7 @@ const videos = [
             title: "Wind Powered Car",
             description: "Explore an alternative energy source to power a car.",
             resource: WindCarResource,
+            url: "fourth/fourth-5-wind-car.mp4",
         },
         {
             id: "fourth-6",
@@ -358,6 +386,7 @@ const videos = [
             description:
                 "Learn about Newton's Laws with these experiments using pennies.",
             resource: PenniesResource,
+            url: "fourth/fourth-6-pennies.mp4",
         },
     ],
     [
@@ -368,6 +397,7 @@ const videos = [
             description:
                 "Oil spills are an environmental disaster. Explore how to clean up the mess!",
             resource: OilSpillResource,
+            url: "fifth/fifth-1-oil-spill-challenge.mp4",
         },
         {
             id: "fifth-2",
@@ -376,6 +406,7 @@ const videos = [
             description:
                 "Explore a little chemistry with some of your favorite candies!",
             resource: CandyChemistryResource,
+            url: "fifth/fifth-2-candy-chemistry.mp4",
         },
         {
             id: "fifth-3",
@@ -384,6 +415,7 @@ const videos = [
             description:
                 "Can you design and create a contraption to keep your egg safe from gravity?",
             resource: EggDropResource,
+            url: "fifth/fifth-3-egg-drop.mp4",
         },
         {
             id: "fifth-4",
@@ -391,6 +423,7 @@ const videos = [
             title: "Gummy Bear Osmosis",
             description: "Use gummy bears to explore the osmosis of matter.",
             resource: OsmosisResource,
+            url: "fifth/fifth-4-osmosis.mp4",
         },
         {
             id: "fifth-5",
@@ -399,6 +432,7 @@ const videos = [
             description:
                 "What makes a tower strong? Explore this concept by using spaghetti to build your own tower.",
             resource: SpaghettiResource,
+            url: "fifth/fifth-5-spaghetti.mp4",
         },
         {
             id: "fifth-6",
@@ -407,6 +441,7 @@ const videos = [
             description:
                 "Explore crystals with magnesium sulfate and create beautiful crystals of your own.",
             resource: CrystalsResource,
+            url: "fifth/fifth-6-oil-crystals.mp4",
         },
     ],
     [
@@ -416,6 +451,7 @@ const videos = [
             title: "Straw Rockets",
             description: "Design and engineer a high flying rocket.",
             resource: StrawRocketsResource,
+            url: "sixth/sixth-1-straw-rockets.mp4",
         },
         {
             id: "sixth-2",
@@ -424,6 +460,7 @@ const videos = [
             description:
                 "How do parachutes help people land safely after jumping out of a plane?",
             resource: ParachutesResource,
+            url: "sixth/sixth-2-parachutes.mp4",
         },
         {
             id: "sixth-3",
@@ -432,6 +469,7 @@ const videos = [
             description:
                 "Explore different types of bridges and build the strongest bridge ever.",
             resource: BridgeBuildingResource,
+            url: "sixth/sixth-3-bridge-building.mp4",
         },
         {
             id: "sixth-4",
@@ -440,6 +478,7 @@ const videos = [
             description:
                 "Can you engineer a super efficient way to hold your mobile phone?",
             resource: CellPhoneResource,
+            url: "sixth/sixth-4-cell-phone.mp4",
         },
         {
             id: "sixth-5",
@@ -447,6 +486,7 @@ const videos = [
             title: "Roller Coaster Physics",
             description: "Engineer and design a fast-moving roller coaster.",
             resource: RollerCoasterResource,
+            url: "sixth/sixth-5-roller-coaster.mp4",
         },
         {
             id: "sixth-6",
@@ -454,6 +494,7 @@ const videos = [
             title: "Paper Airplanes",
             description: "Have fun building complex paper airplanes.",
             resource: PaperAirplaneResource,
+            url: "sixth/sixth-6-paper-airplane.mp4",
         },
     ],
     [
@@ -464,6 +505,7 @@ const videos = [
             description:
                 "Students use color combinations to code these small robots.  Blends the physical and digital world, the combinations are endless.",
             resource: null,
+            url: "tech/tech-1-ozobots.mp4",
         },
         {
             id: "tech-2",
@@ -472,6 +514,7 @@ const videos = [
             description:
                 "Teaches primary students screen-free coding skills with easy-to-use buttons and fun lights and sounds.",
             resource: null,
+            url: "tech/tech-2-coding-mouse.mp4",
         },
         {
             id: "tech-3",
@@ -480,6 +523,7 @@ const videos = [
             description:
                 "Students use modular electronic bits to build inventions. Circuitry and electronics come to life.",
             resource: null,
+            url: "tech/tech-3-little-bits.mp4",
         },
     ],
 ];
