@@ -26,6 +26,7 @@ const VideoDetails = props => {
                         className='video-mask'
                         playsInline
                         controls
+                        controlsList='nodownload'
                         style={{ opacity: 1, width: "100%" }}>
                         <source
                             src={cloudFrontBaseVideoURL + video_url}
