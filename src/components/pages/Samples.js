@@ -25,7 +25,9 @@ const Samples = () => {
                     video_title={
                         videoIndex === "0" ? "Design an Umbrella" : "Catapults"
                     }
-                    video_url={showVideos[videoID].url}
+                    video_url={
+                        videoIndex === "0" ? videos[0][0].url : videos[4][1].url
+                    }
                     video_resources={
                         videoIndex === "0"
                             ? videos[0][0].resource
