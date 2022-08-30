@@ -7,12 +7,12 @@ import WaterCycle from "../static/images/video_thumbs/kinder/water-cycle.png";
 import WhaleBlubber from "../static/images/video_thumbs/kinder/whale-blubber.png";
 
 // kinder resources
-import UmbrellaResource from "../static/resources/Kindergarten-Design-an-Umbrella.pdf";
-import FoilBoatsResource from "../static/resources/Kindergarten-Buoyancy-and-Foil-Boats.pdf";
-import GingerbreadManResource from "../static/resources/Kindergarten-Gingerbread-Man-Trap.pdf";
-import PingPongResource from "../static/resources/Kindergarten-Ping-Pong-Ball-Maze.pdf";
-import WaterCycleResource from "../static/resources/Kindergarten-Water-Cycle.pdf";
-import WhaleBlubberResource from "../static/resources/Kindergarten-Whale-Blubber.pdf";
+import UmbrellaResource from "kinder/Kindergarten-Design-an-Umbrella.pdf";
+import FoilBoatsResource from "kinder/Kindergarten-Buoyancy-and-Foil-Boats.pdf";
+import GingerbreadManResource from "kinder/Kindergarten-Gingerbread-Man-Trap.pdf";
+import PingPongResource from "kinder/Kindergarten-Ping-Pong-Ball-Maze.pdf";
+import WaterCycleResource from "kinder/Kindergarten-Water-Cycle.pdf";
+import WhaleBlubberResource from "kinder/Kindergarten-Whale-Blubber.pdf";
 
 // grade 1 thumbnails
 import Bubbles from "../static/images/video_thumbs/first/bubbles.png";
@@ -23,12 +23,12 @@ import Moon from "../static/images/video_thumbs/first/moon.png";
 import Telephone from "../static/images/video_thumbs/first/telephone.png";
 
 // grade 1 resources
-import BubblesResource from "../static/resources/First-Grade-Bubbles.pdf";
-import ButterflyResource from "../static/resources/First-Grade-Butterfly-Life-Cycle.pdf";
-import CreatureResource from "../static/resources/First-Grade-Create-a-Creature.pdf";
-import KazoosResource from "../static/resources/First-Grade-Kazoos.pdf";
-import MoonResource from "../static/resources/First-Grade-Phases-of-the-Moon.pdf";
-import TelephoneResource from "../static/resources/First-Grade-Telephone-Communication.pdf";
+import BubblesResource from "first/First-Grade-Bubbles.pdf";
+import ButterflyResource from "first/First-Grade-Butterfly-Life-Cycle.pdf";
+import CreatureResource from "first/First-Grade-Create-a-Creature.pdf";
+import KazoosResource from "first/First-Grade-Kazoos.pdf";
+import MoonResource from "first/First-Grade-Phases-of-the-Moon.pdf";
+import TelephoneResource from "first/First-Grade-Telephone-Communication.pdf";
 
 // grade 2 thumbnails
 import Bees from "../static/images/video_thumbs/second/bees.png";
@@ -39,12 +39,12 @@ import MarshmallowLauncher from "../static/images/video_thumbs/second/marshmallo
 import Ooblek from "../static/images/video_thumbs/second/ooblek.png";
 
 // grade 2 resources
-import BeesResource from "../static/resources/Second-Grade-Bees-and-Pollination.pdf";
-import FrogTongueResource from "../static/resources/Second-Grade-Frogs-Tongue.pdf";
-import HarmonicaResource from "../static/resources/Second-Grade-Build-a-Harmonica.pdf";
-import LandformsResource from "../static/resources/Second-Grade-Landforms.pdf";
-import MarshmallowLauncherResource from "../static/resources/Second-Grade-Marshmallow-Launcher.pdf";
-import OoblekResource from "../static/resources/Second-Grade-Ooblek.pdf";
+import BeesResource from "second/Second-Grade-Bees-and-Pollination.pdf";
+import FrogTongueResource from "second/Second-Grade-Frogs-Tongue.pdf";
+import HarmonicaResource from "second/Second-Grade-Build-a-Harmonica.pdf";
+import LandformsResource from "second/Second-Grade-Landforms.pdf";
+import MarshmallowLauncherResource from "second/Second-Grade-Marshmallow-Launcher.pdf";
+import OoblekResource from "second/Second-Grade-Ooblek.pdf";
 
 // grade 3 thumbnails
 import BernoulliLevitator from "../static/images/video_thumbs/third/bernoulli-levitator.png";
@@ -55,12 +55,12 @@ import PlayDohMarble from "../static/images/video_thumbs/third/play-doh-marble.p
 import ZipLine from "../static/images/video_thumbs/third/zip-line.png";
 
 // grade 3 resources
-import BernoulliLevitatorResource from "../static/resources/Third-Grade-Bernoulli-Levitator.pdf";
-import BirdBeaksResource from "../static/resources/Third-Grade-Bird-Beaks.pdf";
-import FossilsResource from "../static/resources/Third-Grade-Fossils.pdf";
-import InertiaResource from "../static/resources/Third-Grade-Inertia.pdf";
-import PlayDohMarbleResource from "../static/resources/Third-Grade-Marble-Run.pdf";
-import ZipLineResource from "../static/resources/Third-Grade-Ziplines.pdf";
+import BernoulliLevitatorResource from "third/Third-Grade-Bernoulli-Levitator.pdf";
+import BirdBeaksResource from "third/Third-Grade-Bird-Beaks.pdf";
+import FossilsResource from "third/Third-Grade-Fossils.pdf";
+import InertiaResource from "third/Third-Grade-Inertia.pdf";
+import PlayDohMarbleResource from "third/Third-Grade-Marble-Run.pdf";
+import ZipLineResource from "third/Third-Grade-Ziplines.pdf";
 
 // grade 4 thumbnails
 import AstronautLander from "../static/images/video_thumbs/fourth/astronaut-lander.png";
@@ -71,12 +71,12 @@ import Pennies from "../static/images/video_thumbs/fourth/pennies.png";
 import WindCar from "../static/images/video_thumbs/fourth/wind-car.png";
 
 // grade 4 resources
-import AstronautLanderResource from "../static/resources/Fourth-Grade-Astronaut-Lander.pdf";
-import CatapultsResource from "../static/resources/Fourth-Grade-Marshmallow-Catapult.pdf";
-import EarthquakeStructuresResource from "../static/resources/Fourth-Grade-Earthquake-Structures.pdf";
-import LemonVolcanoResource from "../static/resources/Fourth-Grade-Lemon-Volcano.pdf";
-import PenniesResource from "../static/resources/Fourth-Grade-Pennies-Collision.pdf";
-import WindCarResource from "../static/resources/Fourth-Grade-Wind-Powered-Car.pdf";
+import AstronautLanderResource from "fourth/Fourth-Grade-Astronaut-Lander.pdf";
+import CatapultsResource from "fourth/Fourth-Grade-Marshmallow-Catapult.pdf";
+import EarthquakeStructuresResource from "fourth/Fourth-Grade-Earthquake-Structures.pdf";
+import LemonVolcanoResource from "fourth/Fourth-Grade-Lemon-Volcano.pdf";
+import PenniesResource from "fourth/Fourth-Grade-Pennies-Collision.pdf";
+import WindCarResource from "fourth/Fourth-Grade-Wind-Powered-Car.pdf";
 
 // grade 5 thumbnails
 import CandyChemistry from "../static/images/video_thumbs/fifth/candy-chemistry.png";
@@ -87,12 +87,12 @@ import Osmosis from "../static/images/video_thumbs/fifth/osmosis.png";
 import Spaghetti from "../static/images/video_thumbs/fifth/spaghetti.png";
 
 // grade 5 resources
-import CandyChemistryResource from "../static/resources/Fifth-Grade-Candy-Chemistry.pdf";
-import CrystalsResource from "../static/resources/Fifth-Grade-Crystal-Formation.pdf";
-import EggDropResource from "../static/resources/Fifth-Grade-Egg-Drop.pdf";
-import OilSpillResource from "../static/resources/Fifth-Grade-Oil-Spill-Clean-Up.pdf";
-import OsmosisResource from "../static/resources/Fifth-Grade-Gummy-Bear-Osmosis.pdf";
-import SpaghettiResource from "../static/resources/Fifth-Grade-Spaghetti-Engineering.pdf";
+import CandyChemistryResource from "fifth/Fifth-Grade-Candy-Chemistry.pdf";
+import CrystalsResource from "fifth/Fifth-Grade-Crystal-Formation.pdf";
+import EggDropResource from "fifth/Fifth-Grade-Egg-Drop.pdf";
+import OilSpillResource from "fifth/Fifth-Grade-Oil-Spill-Clean-Up.pdf";
+import OsmosisResource from "fifth/Fifth-Grade-Gummy-Bear-Osmosis.pdf";
+import SpaghettiResource from "fifth/Fifth-Grade-Spaghetti-Engineering.pdf";
 
 // grade 6 thumbnails
 import BridgeBuilding from "../static/images/video_thumbs/sixth/bridge-building.png";
@@ -103,12 +103,12 @@ import RollerCoaster from "../static/images/video_thumbs/sixth/roller-coaster.pn
 import StrawRockets from "../static/images/video_thumbs/sixth/straw-rockets.png";
 
 // grade 6 resources
-import BridgeBuildingResource from "../static/resources/Sixth-Grade-Bridge-Building.pdf";
-import CellPhoneResource from "../static/resources/Sixth-Grade-Cell-Phone-Stand.pdf";
-import PaperAirplaneResource from "../static/resources/Sixth-Grade-Paper-Airplanes.pdf";
-import ParachutesResource from "../static/resources/Sixth-Grade-Parachutes-and-Air-Resistance.pdf";
-import RollerCoasterResource from "../static/resources/Sixth-Grade-Roller-Coaster-Physics.pdf";
-import StrawRocketsResource from "../static/resources/Sixth-Grade-Straw-Rockets.pdf";
+import BridgeBuildingResource from "sixth/Sixth-Grade-Bridge-Building.pdf";
+import CellPhoneResource from "sixth/Sixth-Grade-Cell-Phone-Stand.pdf";
+import PaperAirplaneResource from "sixth/Sixth-Grade-Paper-Airplanes.pdf";
+import ParachutesResource from "sixth/Sixth-Grade-Parachutes-and-Air-Resistance.pdf";
+import RollerCoasterResource from "sixth/Sixth-Grade-Roller-Coaster-Physics.pdf";
+import StrawRocketsResource from "sixth/Sixth-Grade-Straw-Rockets.pdf";
 
 // technology thumbnails
 

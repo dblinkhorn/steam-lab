@@ -11,8 +11,11 @@ const VideoDetails = props => {
 
     const { video_title, video_url, video_resources } = props;
 
-    const cloudFrontBaseURL =
+    const cloudFrontBaseVideoURL =
         "https://dh40o6ol29pzy.cloudfront.net/steam-lab-videos/";
+
+    const cloudFrontBaseResourcesURL =
+        "https://dh40o6ol29pzy.cloudfront.net/steam-lab-resources/";
 
     return (
         <div className='video-details__outer-container'>
@@ -25,7 +28,7 @@ const VideoDetails = props => {
                         controls
                         style={{ opacity: 1, width: "100%" }}>
                         <source
-                            src={cloudFrontBaseURL + video_url}
+                            src={cloudFrontBaseVideoURL + video_url}
                             type='video/mp4'
                         />
                     </video>
