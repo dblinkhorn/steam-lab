@@ -30,7 +30,7 @@ const Members = () => {
                 <VideoDetails
                     video_title={showVideos[videoID].title}
                     video_url={showVideos[videoID].url}
-                    video_resources={showVideos[videoID].resource}
+                    video_resource_url={showVideos[videoID].resource}
                 />
                 <button
                     className='members__back-button'

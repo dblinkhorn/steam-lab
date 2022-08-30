@@ -28,7 +28,7 @@ const Samples = () => {
                     video_url={
                         videoIndex === "0" ? videos[0][0].url : videos[4][1].url
                     }
-                    video_resources={
+                    video_resource_url={
                         videoIndex === "0"
                             ? videos[0][0].resource
                             : videos[4][1].resource

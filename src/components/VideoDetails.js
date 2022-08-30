@@ -9,7 +9,7 @@ const VideoDetails = props => {
         window.scrollTo(0, 0);
     }, []);
 
-    const { video_title, video_url, video_resources } = props;
+    const { video_title, video_url, video_resource_url } = props;
 
     const cloudFrontBaseVideoURL =
         "https://dh40o6ol29pzy.cloudfront.net/steam-lab-videos/";
@@ -34,12 +34,17 @@ const VideoDetails = props => {
                     </video>
                 </div>
                 {/* technology videos have no additional resources; don't render this */}
-                {video_resources ? (
+                {video_resource_url ? (
                     <div className='video-details__resources'>
                         <div className='video-details__resources-text'>
                             Additional Resources & Enrichment:
                             <div className='video-details__resources-file'>
-                                <a href={video_resources} target='_blank'>
+                                <a
+                                    href={
+                                        cloudFrontBaseResourcesURL +
+                                        video_resource_url
+                                    }
+                                    target='_blank'>
                                     <FontAwesomeIcon
                                         icon={faFilePdf}
                                         color='black'
