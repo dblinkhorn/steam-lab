@@ -212,7 +212,7 @@ const videos = [
             title: "Ooblek",
             description: "Not a solid, not a liquid. What is it?",
             resource: "second/Second-Grade-Ooblek.pdf",
-            url: "second/second-2-ooblek.mp4",
+            url: "second/second-5-ooblek.mp4",
         },
         {
             id: "second-6",
@@ -221,7 +221,7 @@ const videos = [
             description:
                 "Bees are amazing! Explore how they pollinate the flowers around us.",
             resource: "second/Second-Grade-Bees-and-Pollination.pdf",
-            url: "second/second-2-bees.mp4",
+            url: "second/second-6-bees.mp4",
         },
     ],
     [
@@ -384,7 +384,7 @@ const videos = [
             description:
                 "Explore crystals with magnesium sulfate and create beautiful crystals of your own.",
             resource: "fifth/Fifth-Grade-Crystal-Formation.pdf",
-            url: "fifth/fifth-6-oil-crystals.mp4",
+            url: "fifth/fifth-6-crystals.mp4",
         },
     ],
     [
