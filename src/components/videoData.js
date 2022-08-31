@@ -6,14 +6,6 @@ import PingPong from "../static/images/video_thumbs/kinder/ping-pong.png";
 import WaterCycle from "../static/images/video_thumbs/kinder/water-cycle.png";
 import WhaleBlubber from "../static/images/video_thumbs/kinder/whale-blubber.png";
 
-// kinder resources
-import UmbrellaResource from "kinder/Kindergarten-Design-an-Umbrella.pdf";
-import FoilBoatsResource from "kinder/Kindergarten-Buoyancy-and-Foil-Boats.pdf";
-import GingerbreadManResource from "kinder/Kindergarten-Gingerbread-Man-Trap.pdf";
-import PingPongResource from "kinder/Kindergarten-Ping-Pong-Ball-Maze.pdf";
-import WaterCycleResource from "kinder/Kindergarten-Water-Cycle.pdf";
-import WhaleBlubberResource from "kinder/Kindergarten-Whale-Blubber.pdf";
-
 // grade 1 thumbnails
 import Bubbles from "../static/images/video_thumbs/first/bubbles.png";
 import Butterfly from "../static/images/video_thumbs/first/butterfly.png";
@@ -22,14 +14,6 @@ import Kazoos from "../static/images/video_thumbs/first/kazoos.png";
 import Moon from "../static/images/video_thumbs/first/moon.png";
 import Telephone from "../static/images/video_thumbs/first/telephone.png";
 
-// grade 1 resources
-import BubblesResource from "first/First-Grade-Bubbles.pdf";
-import ButterflyResource from "first/First-Grade-Butterfly-Life-Cycle.pdf";
-import CreatureResource from "first/First-Grade-Create-a-Creature.pdf";
-import KazoosResource from "first/First-Grade-Kazoos.pdf";
-import MoonResource from "first/First-Grade-Phases-of-the-Moon.pdf";
-import TelephoneResource from "first/First-Grade-Telephone-Communication.pdf";
-
 // grade 2 thumbnails
 import Bees from "../static/images/video_thumbs/second/bees.png";
 import FrogTongue from "../static/images/video_thumbs/second/frog-tongue.png";
@@ -37,14 +21,6 @@ import Harmonica from "../static/images/video_thumbs/second/harmonica.png";
 import Landforms from "../static/images/video_thumbs/second/landforms.png";
 import MarshmallowLauncher from "../static/images/video_thumbs/second/marshmallow-launcher.png";
 import Ooblek from "../static/images/video_thumbs/second/ooblek.png";
-
-// grade 2 resources
-import BeesResource from "second/Second-Grade-Bees-and-Pollination.pdf";
-import FrogTongueResource from "second/Second-Grade-Frogs-Tongue.pdf";
-import HarmonicaResource from "second/Second-Grade-Build-a-Harmonica.pdf";
-import LandformsResource from "second/Second-Grade-Landforms.pdf";
-import MarshmallowLauncherResource from "second/Second-Grade-Marshmallow-Launcher.pdf";
-import OoblekResource from "second/Second-Grade-Ooblek.pdf";
 
 // grade 3 thumbnails
 import BernoulliLevitator from "../static/images/video_thumbs/third/bernoulli-levitator.png";
@@ -124,7 +100,7 @@ const videos = [
             thumbnail: Umbrella,
             title: "Design an Umbrella",
             description: "Explore how to keep a creature dry in a rainstorm.",
-            resource: UmbrellaResource,
+            resource: "kinder/Kindergarten-Design-an-Umbrella.pdf",
             url: "kinder/kinder-1-umbrella.mp4",
         },
         {
@@ -133,7 +109,7 @@ const videos = [
             title: "Buoyancy & Foil Boats",
             description:
                 "What makes a boat float? Design a boat that can hold the most pennies without sinking.",
-            resource: FoilBoatsResource,
+            resource: "kinder/Kindergarten-Buoyancy-and-Foil-Boats.pdf",
             url: "kinder/kinder-2-buoyancy.mp4",
         },
         {
@@ -142,7 +118,7 @@ const videos = [
             title: "Gingerbread Man Trap",
             description:
                 "The gingerbread man has escaped! Engineer a trap to catch him.",
-            resource: GingerbreadManResource,
+            resource: "kinder/Kindergarten-Gingerbread-Man-Trap.pdf",
             url: "kinder/kinder-3-gingerbread.mp4",
         },
         {
@@ -151,7 +127,7 @@ const videos = [
             title: "Ping Pong Ball Maze",
             description:
                 "Design a maze that uses motion and stability to move a ping pong ball.",
-            resource: PingPongResource,
+            resource: "kinder/Kindergarten-Ping-Pong-Ball-Maze.pdf",
             url: "kinder/kinder-4-ping-pong.mp4",
         },
         {
@@ -160,7 +136,7 @@ const videos = [
             title: "Water Cycle in a Bag",
             description:
                 "Have you ever wondered where rain comes from? Find out in this exploration.",
-            resource: WaterCycleResource,
+            resource: "kinder/Kindergarten-Water-Cycle.pdf",
             url: "kinder/kinder-5-water-cycle.mp4",
         },
         {
@@ -169,7 +145,7 @@ const videos = [
             title: "Whale Blubber",
             description:
                 "Experience what it feels like to be a whale in the cold ocean water.",
-            resource: WhaleBlubberResource,
+            resource: "kinder/Kindergarten-Whale-Blubber.pdf",
             url: "kinder/kinder-6-blubber.mp4",
         },
     ],
@@ -180,7 +156,7 @@ const videos = [
             title: "Bubbles",
             description:
                 "Are bubbles always round? Explore different ways to create a bubble.",
-            resource: BubblesResource,
+            resource: "first/First-Grade-Bubbles.pdf",
             url: "first/first-1-bubbles.mp4",
         },
         {
@@ -189,7 +165,7 @@ const videos = [
             title: "Create a Creature",
             description:
                 "Have fun creating a new creature that uses its parts to survive and grow.",
-            resource: CreatureResource,
+            resource: "first/First-Grade-Create-a-Creature.pdf",
             url: "first/first-2-creature.mp4",
         },
         {
@@ -198,7 +174,7 @@ const videos = [
             title: "Butterfly Life-cycle",
             description:
                 "Create a model to illustrate the steps in a butterfly's life cycle.",
-            resource: ButterflyResource,
+            resource: "first/First-Grade-Butterfly-Life-Cycle.pdf",
             url: "first/first-3-butterfly.mp4",
         },
         {
@@ -207,7 +183,7 @@ const videos = [
             title: "Phases of the Moon",
             description:
                 "Use Oreos to explore the patterns of the moon in the night sky.",
-            resource: MoonResource,
+            resource: "first/First-Grade-Phases-of-the-Moon.pdf",
             url: "first/first-4-moon-phases.mp4",
         },
         {
@@ -215,7 +191,7 @@ const videos = [
             thumbnail: Telephone,
             title: "Telephone Communication",
             description: "How does sound move? Build a communication device.",
-            resource: TelephoneResource,
+            resource: "first/First-Grade-Telephone-Communication.pdf",
             url: "first/first-5-telephone.mp4",
         },
         {
@@ -223,7 +199,7 @@ const videos = [
             thumbnail: Kazoos,
             title: "Kazoos!",
             description: "Make some music by creating your own kazoo.",
-            resource: KazoosResource,
+            resource: "first/First-Grade-Kazoos.pdf",
             url: "first/first-6-kazoos.mp4",
         },
     ],
@@ -234,7 +210,7 @@ const videos = [
             title: "Frog's Tongue",
             description:
                 "Have you wondered how a frog catches a fly? Find out in this exploration.",
-            resource: FrogTongueResource,
+            resource: "second/Second-Grade-Frogs-Tongue.pdf",
             url: "second/second-1-frogs-tongue.mp4",
         },
         {
@@ -243,7 +219,7 @@ const videos = [
             title: "Marshmallow Launcher",
             description:
                 "Create a launcher and see how far you can make your marshmallow fly.",
-            resource: MarshmallowLauncherResource,
+            resource: "second/Second-Grade-Marshmallow-Launcher.pdf",
             url: "second/second-2-marshmallow-launcher.mp4",
         },
         {
@@ -251,7 +227,7 @@ const videos = [
             thumbnail: Harmonica,
             title: "Build a Harmonica",
             description: "Explore how to make sound with your own harmonica.",
-            resource: HarmonicaResource,
+            resource: "second/Second-Grade-Build-a-Harmonica.pdf",
             url: "second/second-3-harmonica.mp4",
         },
         {
@@ -260,7 +236,7 @@ const videos = [
             title: "Landforms",
             description:
                 "Do you live in the mountains, or in a valley, or along the coast? Design and create your own island.",
-            resource: LandformsResource,
+            resource: "second/Second-Grade-Landforms.pdf",
             url: "second/second-4-landforms.mp4",
         },
         {
@@ -268,7 +244,7 @@ const videos = [
             thumbnail: Ooblek,
             title: "Ooblek",
             description: "Not a solid, not a liquid. What is it?",
-            resource: OoblekResource,
+            resource: "second/Second-Grade-Ooblek.pdf",
             url: "second/second-2-ooblek.mp4",
         },
         {
@@ -277,7 +253,7 @@ const videos = [
             title: "Bees and Pollination",
             description:
                 "Bees are amazing! Explore how they pollinate the flowers around us.",
-            resource: BeesResource,
+            resource: "second/Second-Grade-Bees-and-Pollination.pdf",
             url: "second/second-2-bees.mp4",
         },
     ],
