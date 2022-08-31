@@ -30,14 +30,6 @@ import Inertia from "../static/images/video_thumbs/third/intertia.png";
 import PlayDohMarble from "../static/images/video_thumbs/third/play-doh-marble.png";
 import ZipLine from "../static/images/video_thumbs/third/zip-line.png";
 
-// grade 3 resources
-import BernoulliLevitatorResource from "third/Third-Grade-Bernoulli-Levitator.pdf";
-import BirdBeaksResource from "third/Third-Grade-Bird-Beaks.pdf";
-import FossilsResource from "third/Third-Grade-Fossils.pdf";
-import InertiaResource from "third/Third-Grade-Inertia.pdf";
-import PlayDohMarbleResource from "third/Third-Grade-Marble-Run.pdf";
-import ZipLineResource from "third/Third-Grade-Ziplines.pdf";
-
 // grade 4 thumbnails
 import AstronautLander from "../static/images/video_thumbs/fourth/astronaut-lander.png";
 import Catapults from "../static/images/video_thumbs/fourth/catapults.png";
@@ -45,14 +37,6 @@ import EarthquakeStructures from "../static/images/video_thumbs/fourth/earthquak
 import LemonVolcano from "../static/images/video_thumbs/fourth/lemon-volcano.png";
 import Pennies from "../static/images/video_thumbs/fourth/pennies.png";
 import WindCar from "../static/images/video_thumbs/fourth/wind-car.png";
-
-// grade 4 resources
-import AstronautLanderResource from "fourth/Fourth-Grade-Astronaut-Lander.pdf";
-import CatapultsResource from "fourth/Fourth-Grade-Marshmallow-Catapult.pdf";
-import EarthquakeStructuresResource from "fourth/Fourth-Grade-Earthquake-Structures.pdf";
-import LemonVolcanoResource from "fourth/Fourth-Grade-Lemon-Volcano.pdf";
-import PenniesResource from "fourth/Fourth-Grade-Pennies-Collision.pdf";
-import WindCarResource from "fourth/Fourth-Grade-Wind-Powered-Car.pdf";
 
 // grade 5 thumbnails
 import CandyChemistry from "../static/images/video_thumbs/fifth/candy-chemistry.png";
@@ -62,14 +46,6 @@ import OilSpill from "../static/images/video_thumbs/fifth/oil-spill.png";
 import Osmosis from "../static/images/video_thumbs/fifth/osmosis.png";
 import Spaghetti from "../static/images/video_thumbs/fifth/spaghetti.png";
 
-// grade 5 resources
-import CandyChemistryResource from "fifth/Fifth-Grade-Candy-Chemistry.pdf";
-import CrystalsResource from "fifth/Fifth-Grade-Crystal-Formation.pdf";
-import EggDropResource from "fifth/Fifth-Grade-Egg-Drop.pdf";
-import OilSpillResource from "fifth/Fifth-Grade-Oil-Spill-Clean-Up.pdf";
-import OsmosisResource from "fifth/Fifth-Grade-Gummy-Bear-Osmosis.pdf";
-import SpaghettiResource from "fifth/Fifth-Grade-Spaghetti-Engineering.pdf";
-
 // grade 6 thumbnails
 import BridgeBuilding from "../static/images/video_thumbs/sixth/bridge-building.png";
 import CellPhone from "../static/images/video_thumbs/sixth/cell-phone.png";
@@ -78,16 +54,7 @@ import Parachutes from "../static/images/video_thumbs/sixth/parachutes.png";
 import RollerCoaster from "../static/images/video_thumbs/sixth/roller-coaster.png";
 import StrawRockets from "../static/images/video_thumbs/sixth/straw-rockets.png";
 
-// grade 6 resources
-import BridgeBuildingResource from "sixth/Sixth-Grade-Bridge-Building.pdf";
-import CellPhoneResource from "sixth/Sixth-Grade-Cell-Phone-Stand.pdf";
-import PaperAirplaneResource from "sixth/Sixth-Grade-Paper-Airplanes.pdf";
-import ParachutesResource from "sixth/Sixth-Grade-Parachutes-and-Air-Resistance.pdf";
-import RollerCoasterResource from "sixth/Sixth-Grade-Roller-Coaster-Physics.pdf";
-import StrawRocketsResource from "sixth/Sixth-Grade-Straw-Rockets.pdf";
-
 // technology thumbnails
-
 import CodingMouse from "../static/images/video_thumbs/tech/coding-mouse.png";
 import LittleBits from "../static/images/video_thumbs/tech/little-bits.png";
 import Ozobots from "../static/images/video_thumbs/tech/ozobots.png";
@@ -263,7 +230,7 @@ const videos = [
             thumbnail: PlayDohMarble,
             title: "Play-Doh Marble Run",
             description: "Use cups and Play-Doh to build a roller coaster.",
-            resource: PlayDohMarbleResource,
+            resource: "third/Third-Grade-Marble-Run.pdf",
             url: "third/third-1-marbles.mp4",
         },
         {
@@ -272,7 +239,7 @@ const videos = [
             title: "Zip Line",
             description:
                 "Design a zip line carrier that will protect your ping pong ball from a fall.",
-            resource: ZipLineResource,
+            resource: "third/Third-Grade-Ziplines.pdf",
             url: "third/third-2-zip-line.mp4",
         },
         {
@@ -280,7 +247,7 @@ const videos = [
             thumbnail: BernoulliLevitator,
             title: "Bernoulli Levitator",
             description: "Can you make something float in the air?",
-            resource: BernoulliLevitatorResource,
+            resource: "third/Third-Grade-Bernoulli-Levitator.pdf",
             url: "third/third-3-bernoulli.mp4",
         },
         {
@@ -289,7 +256,7 @@ const videos = [
             title: "Fossils",
             description:
                 "Learn about impression fossils with gummy worms and bread.",
-            resource: FossilsResource,
+            resource: "third/Third-Grade-Fossils.pdf",
             url: "third/third-4-fossils.mp4",
         },
         {
@@ -298,7 +265,7 @@ const videos = [
             title: "Inertia",
             description:
                 "Test your cup stacking skills against the force of inertia.",
-            resource: InertiaResource,
+            resource: "third/Third-Grade-Inertia.pdf",
             url: "third/third-5-inertia.mp4",
         },
         {
@@ -307,7 +274,7 @@ const videos = [
             title: "Bird Beaks",
             description:
                 "Why do birds have different shaped beaks? Let's think about their dinner!",
-            resource: BirdBeaksResource,
+            resource: "third/Third-Grade-Bird-Beaks.pdf",
             url: "third/third-6-bird-beaks.mp4",
         },
     ],
@@ -318,7 +285,7 @@ const videos = [
             title: "Earthquake Structures",
             description:
                 "Engineer a structure that will survive an earthquake.",
-            resource: EarthquakeStructuresResource,
+            resource: "fourth/Fourth-Grade-Earthquake-Structures.pdf",
             url: "fourth/fourth-1-earthquake.mp4",
         },
         {
@@ -326,7 +293,7 @@ const videos = [
             thumbnail: Catapults,
             title: "Catapults",
             description: "How far can you launch a marshmallow?",
-            resource: CatapultsResource,
+            resource: "fourth/Fourth-Grade-Marshmallow-Catapult.pdf",
             url: "fourth/fourth-2-catapults.mp4",
         },
         {
@@ -335,7 +302,7 @@ const videos = [
             title: "Astronaut Lander",
             description:
                 "Design and create a way to help an astronaut land safely.",
-            resource: AstronautLanderResource,
+            resource: "fourth/Fourth-Grade-Astronaut-Lander.pdf",
             url: "fourth/fourth-3-astronaut.mp4",
         },
         {
@@ -344,7 +311,7 @@ const videos = [
             title: "Lemon Volcano",
             description:
                 "Explore the chemistry of lemons to create a volcano and learn about acids and bases.",
-            resource: LemonVolcanoResource,
+            resource: "fourth/Fourth-Grade-Lemon-Volcano.pdf",
             url: "fourth/fourth-4-lemon-volcano.mp4",
         },
         {
@@ -352,7 +319,7 @@ const videos = [
             thumbnail: WindCar,
             title: "Wind Powered Car",
             description: "Explore an alternative energy source to power a car.",
-            resource: WindCarResource,
+            resource: "fourth/Fourth-Grade-Wind-Powered-Car.pdf",
             url: "fourth/fourth-5-wind-car.mp4",
         },
         {
@@ -361,7 +328,7 @@ const videos = [
             title: "Pennies Collision",
             description:
                 "Learn about Newton's Laws with these experiments using pennies.",
-            resource: PenniesResource,
+            resource: "fourth/Fourth-Grade-Pennies-Collision.pdf",
             url: "fourth/fourth-6-pennies.mp4",
         },
     ],
@@ -372,7 +339,7 @@ const videos = [
             title: "Oil Spill Challenge",
             description:
                 "Oil spills are an environmental disaster. Explore how to clean up the mess!",
-            resource: OilSpillResource,
+            resource: "fifth/Fifth-Grade-Oil-Spill-Clean-Up.pdf",
             url: "fifth/fifth-1-oil-spill-challenge.mp4",
         },
         {
@@ -381,7 +348,7 @@ const videos = [
             title: "Candy Chemistry",
             description:
                 "Explore a little chemistry with some of your favorite candies!",
-            resource: CandyChemistryResource,
+            resource: "fifth/Fifth-Grade-Candy-Chemistry.pdf",
             url: "fifth/fifth-2-candy-chemistry.mp4",
         },
         {
@@ -390,7 +357,7 @@ const videos = [
             title: "Egg Drop",
             description:
                 "Can you design and create a contraption to keep your egg safe from gravity?",
-            resource: EggDropResource,
+            resource: "fifth/Fifth-Grade-Egg-Drop.pdf",
             url: "fifth/fifth-3-egg-drop.mp4",
         },
         {
@@ -398,7 +365,7 @@ const videos = [
             thumbnail: Osmosis,
             title: "Gummy Bear Osmosis",
             description: "Use gummy bears to explore the osmosis of matter.",
-            resource: OsmosisResource,
+            resource: "fifth/Fifth-Grade-Gummy-Bear-Osmosis.pdf",
             url: "fifth/fifth-4-osmosis.mp4",
         },
         {
@@ -407,7 +374,7 @@ const videos = [
             title: "Spaghetti Engineering",
             description:
                 "What makes a tower strong? Explore this concept by using spaghetti to build your own tower.",
-            resource: SpaghettiResource,
+            resource: "fifth/Fifth-Grade-Spaghetti-Engineering.pdf",
             url: "fifth/fifth-5-spaghetti.mp4",
         },
         {
@@ -416,7 +383,7 @@ const videos = [
             title: "Crystal Formation",
             description:
                 "Explore crystals with magnesium sulfate and create beautiful crystals of your own.",
-            resource: CrystalsResource,
+            resource: "fifth/Fifth-Grade-Crystal-Formation.pdf",
             url: "fifth/fifth-6-oil-crystals.mp4",
         },
     ],
@@ -426,7 +393,7 @@ const videos = [
             thumbnail: StrawRockets,
             title: "Straw Rockets",
             description: "Design and engineer a high flying rocket.",
-            resource: StrawRocketsResource,
+            resource: "sixth/Sixth-Grade-Straw-Rockets.pdf",
             url: "sixth/sixth-1-straw-rockets.mp4",
         },
         {
@@ -435,7 +402,7 @@ const videos = [
             title: "Parachutes",
             description:
                 "How do parachutes help people land safely after jumping out of a plane?",
-            resource: ParachutesResource,
+            resource: "sixth/Sixth-Grade-Parachutes-and-Air-Resistance.pdf",
             url: "sixth/sixth-2-parachutes.mp4",
         },
         {
@@ -444,7 +411,7 @@ const videos = [
             title: "Bridge Building",
             description:
                 "Explore different types of bridges and build the strongest bridge ever.",
-            resource: BridgeBuildingResource,
+            resource: "sixth/Sixth-Grade-Bridge-Building.pdf",
             url: "sixth/sixth-3-bridge-building.mp4",
         },
         {
@@ -453,7 +420,7 @@ const videos = [
             title: "Design a Cell Phone Stand",
             description:
                 "Can you engineer a super efficient way to hold your mobile phone?",
-            resource: CellPhoneResource,
+            resource: "sixth/Sixth-Grade-Cell-Phone-Stand.pdf",
             url: "sixth/sixth-4-cell-phone.mp4",
         },
         {
@@ -461,7 +428,7 @@ const videos = [
             thumbnail: RollerCoaster,
             title: "Roller Coaster Physics",
             description: "Engineer and design a fast-moving roller coaster.",
-            resource: RollerCoasterResource,
+            resource: "sixth/Sixth-Grade-Roller-Coaster-Physics.pdf",
             url: "sixth/sixth-5-roller-coaster.mp4",
         },
         {
@@ -469,7 +436,7 @@ const videos = [
             thumbnail: PaperAirplane,
             title: "Paper Airplanes",
             description: "Have fun building complex paper airplanes.",
-            resource: PaperAirplaneResource,
+            resource: "sixth/Sixth-Grade-Paper-Airplanes.pdf",
             url: "sixth/sixth-6-paper-airplane.mp4",
         },
     ],
