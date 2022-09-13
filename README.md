@@ -1,3 +1,3 @@
-# Mr. Reed's STEAM Lab (unfinished)
+# Mr. Reed's STEAM Lab
 
-Live version: https://dblinkhorn.github.io/steam-lab/#/
+Live version: https://www.mrreedsteamlab.com/
