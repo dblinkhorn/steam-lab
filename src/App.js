@@ -1,16 +1,16 @@
-import React from "react";
-import { NavLink, Outlet, Link } from "react-router-dom";
-import { useState } from "react";
-import Menu from "react-burger-menu/lib/menus/slide";
-import "react-burger-menu";
-import Logo from "./static/images/logo.png";
-import Footer from "./components/Footer";
-import "./App.css";
+import React from 'react';
+import { NavLink, Outlet, Link } from 'react-router-dom';
+import { useState } from 'react';
+import Menu from 'react-burger-menu/lib/menus/slide';
+import 'react-burger-menu';
+import Logo from './static/images/logo.png';
+import Footer from './components/Footer';
+import './App.css';
 
 const hrStyle = {
-    border: "0px",
-    borderTop: "1px solid white",
-    height: "1px",
+    border: '0px',
+    borderTop: '1px solid white',
+    height: '1px',
 };
 
 const App = () => {
@@ -51,7 +51,7 @@ const App = () => {
                     SAMPLE LESSONS
                 </NavLink>
                 <hr style={hrStyle} />
-                <NavLink onClick={closeSideBar} to='/members'>
+                <NavLink onClick={closeSideBar} to='/members/kindergarten'>
                     MEMBERS
                 </NavLink>
                 <hr style={hrStyle} />
@@ -90,7 +90,9 @@ const App = () => {
                             </NavLink>
                         </li>
                         <li className='nav-button'>
-                            <NavLink to='/members' activeclassname='underline'>
+                            <NavLink
+                                to='/members/kindergarten'
+                                activeclassname='underline'>
                                 MEMBERS
                             </NavLink>
                         </li>

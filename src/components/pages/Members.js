@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import VideoCard from "../VideoCard";
-import "./Members.css";
-import { videos } from "../videoData";
-import VideoDetails from "../VideoDetails";
-import Login from "./Login";
-import { passwords } from "./secure";
+import React, { useState, useEffect } from 'react';
+import VideoCard from '../VideoCard';
+import './Members.css';
+import { videos } from '../videoData';
+import VideoDetails from '../VideoDetails';
+import Login from './Login';
+import { passwords } from './secure';
+import { Link } from 'react-router-dom';
 
 const Members = () => {
     useEffect(() => {
@@ -18,13 +19,27 @@ const Members = () => {
         setShowVideoDetails(null);
     };
 
+    const getHeading = grade => {
+        const headings = [
+            'Kindergarten',
+            'Grade 1',
+            'Grade 2',
+            'Grade 3',
+            'Grade 4',
+            'Grade 5',
+            'Grade 6',
+            'Technology',
+        ];
+        return headings[grade];
+    };
+
     const backButtonClicked = () => {
         setShowVideoDetails(null);
         window.scrollTo(0, 0);
     };
 
     const handleVideoClick = e => {
-        const videoID = e.currentTarget.getAttribute("video-index");
+        const videoID = e.currentTarget.getAttribute('video-index');
         setShowVideoDetails(
             <>
                 <VideoDetails
@@ -45,7 +60,7 @@ const Members = () => {
     const [showVideos, setShowVideos] = useState(videos[0]);
 
     // controls heading to display depending on selected grade
-    const [videosHeading, setVideosHeading] = useState("Kindergarten");
+    const [videosHeading, setVideosHeading] = useState('Kindergarten');
 
     // controls which video to display details page from user click
     const [showVideoDetails, setShowVideoDetails] = useState(null);
@@ -58,11 +73,11 @@ const Members = () => {
     const [invalidLogin, setInvalidLogin] = useState(false);
 
     useEffect(() => {
-        setIsLoggedIn(JSON.parse(window.sessionStorage.getItem("isLoggedIn")));
+        setIsLoggedIn(JSON.parse(window.sessionStorage.getItem('isLoggedIn')));
     }, []);
 
     useEffect(() => {
-        window.sessionStorage.setItem("isLoggedIn", isLoggedIn);
+        window.sessionStorage.setItem('isLoggedIn', isLoggedIn);
     }, [isLoggedIn]);
 
     // checks if password input is valid password and updates state if so
@@ -76,7 +91,7 @@ const Members = () => {
 
     return (
         <>
-            <div style={{ display: isLoggedIn ? "none" : null }}>
+            <div style={{ display: isLoggedIn ? 'none' : null }}>
                 <Login
                     handleLogIn={handleLogIn}
                     invalidLogin={invalidLogin}
@@ -88,7 +103,29 @@ const Members = () => {
                     <div className='members__button-container'>
                         {/* grades nav menu */}
                         <ul className='members__grade-buttons'>
-                            <li>
+                            {videos.map((_, index) => (
+                                <li
+                                    key={getHeading(index)
+                                        .replace(' ', '-')
+                                        .toLowerCase()}>
+                                    <Link
+                                        to={`/members/${getHeading(index)
+                                            .replace(' ', '-')
+                                            .toLowerCase()}`}>
+                                        <button
+                                            className='members__button'
+                                            onClick={() => {
+                                                handleGradeButtonClick(
+                                                    videos[index],
+                                                    getHeading(index)
+                                                );
+                                            }}>
+                                            {getHeading(index)}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
+                            {/* <li>
                                 <button
                                     className='members__button'
                                     onClick={() => {
@@ -183,7 +220,7 @@ const Members = () => {
                                     }}>
                                     Technology
                                 </button>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     {showVideoDetails ? (
