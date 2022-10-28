@@ -1,11 +1,19 @@
 import React from 'react';
-import { NavLink, Outlet, Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Menu from 'react-burger-menu/lib/menus/slide';
 import 'react-burger-menu';
 import Logo from './static/images/logo.png';
 import Footer from './components/Footer';
 import './App.css';
+import { Routes, Route, useMatch } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Mission from './components/pages/Mission';
+import About from './components/pages/About';
+import Members from './components/pages/Members';
+import Samples from './components/pages/Samples';
+import Contact from './components/pages/Contact';
+import Login from './components/pages/Login';
 
 const hrStyle = {
     border: '0px',
@@ -14,6 +22,24 @@ const hrStyle = {
 };
 
 const App = () => {
+    const gradesUrls = {
+        0: 'kindergarten',
+        1: 'grade-1',
+        2: 'grade-2',
+        3: 'grade-3',
+        4: 'grade-4',
+        5: 'grade-5',
+        6: 'grade-6',
+        7: 'technology',
+    };
+
+    const match = useMatch('/members/:id');
+    const grade = match
+        ? Object.keys(gradesUrls).find(
+              key => gradesUrls[key] === match.params.id
+          )
+        : null;
+
     // boolean state to determine if burger menu should be open/close
     const [isOpen, setOpen] = useState(false);
 
@@ -106,7 +132,19 @@ const App = () => {
                     </Link>
                 </div>
             </div>
-            <Outlet />
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path='/mission' element={<Mission />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/members' element={<Members />} />
+                <Route
+                    path='/members/:id'
+                    element={<Members grade={grade} />}
+                />
+                <Route path='/samples' element={<Samples />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/login' element={<Login />} />
+            </Routes>
             <div className='footer'>
                 <Footer />
             </div>
