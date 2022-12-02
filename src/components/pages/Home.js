@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import kidsHome from "../../static/images/kids-home.png";
-import kidsHome2 from "../../static/images/kids-home2.png";
-import redFlask from "../../static/images/red_flask.png";
-import Offerings from "../Offerings";
-import "./Home.css";
-import "../../App.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import kidsHome from '../../static/images/kids-home.png';
+import kidsHome2 from '../../static/images/kids-home2.png';
+import redFlask from '../../static/images/red_flask.png';
+import Offerings from '../Offerings';
+import './Home.css';
+import '../../App.css';
 
 const Home = () => {
     React.useEffect(() => {
@@ -74,7 +74,7 @@ const Home = () => {
                             <li>Grade K-6 videos aligned to the NGSS</li>
                             <li>Encourage engagement with a STEAM challenge</li>
                             <li>
-                                Activities created with a easy-to-find materials
+                                Activities created with easy-to-find materials
                             </li>
                             <li>
                                 Mr. Reed demonstrates step-by-step instructions
