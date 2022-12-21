@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
-import "./VideoDetails.css";
-import "./Offerings.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import './VideoDetails.css';
+import './Offerings.css';
 
 const VideoDetails = props => {
     React.useEffect(() => {
@@ -12,10 +12,10 @@ const VideoDetails = props => {
     const { video_title, video_url, video_resource_url } = props;
 
     const cloudFrontBaseVideoURL =
-        "https://dh40o6ol29pzy.cloudfront.net/steam-lab-videos/";
+        'https://resources.mrreedsteamlab.com/steam-lab-videos/';
 
     const cloudFrontBaseResourcesURL =
-        "https://dh40o6ol29pzy.cloudfront.net/steam-lab-resources/";
+        'https://resources.mrreedsteamlab.com/steam-lab-resources/';
 
     return (
         <div className='video-details__outer-container'>
@@ -27,7 +27,7 @@ const VideoDetails = props => {
                         playsInline
                         controls
                         controlsList='nodownload'
-                        style={{ opacity: 1, width: "100%" }}>
+                        style={{ opacity: 1, width: '100%' }}>
                         <source
                             src={cloudFrontBaseVideoURL + video_url}
                             type='video/mp4'
