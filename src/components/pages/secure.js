@@ -2,7 +2,7 @@ export const passwords = [
     'sophiejune',
     'adam2022',
     'jefferson2022',
-    'fairlawnpilot',
+    'fairlawn2023',
     'wells2022',
     'alvin2023',
 ];
