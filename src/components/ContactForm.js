@@ -1,8 +1,8 @@
-import { Formik, Form, useField } from "formik";
-import { useState, useEffect } from "react";
-import * as Yup from "yup";
-import emailjs from "@emailjs/browser";
-import "./ContactForm.css";
+import { Formik, Form, useField } from 'formik';
+import { useState, useEffect } from 'react';
+import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
+import './ContactForm.css';
 
 const TextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
@@ -15,7 +15,11 @@ const TextInput = ({ label, ...props }) => {
                     <div className='error'>{meta.error}</div>
                 ) : null}
             </div>
-            <input className='text-input' {...field} {...props} />
+            <input
+                className='text-input'
+                {...field}
+                {...props}
+            />
         </>
     );
 };
@@ -30,10 +34,14 @@ const PhoneInput = ({ label, ...props }) => {
                 {meta.touched && meta.error ? (
                     <div className='error'>{meta.error}</div>
                 ) : (
-                    "(optional)"
+                    '(optional)'
                 )}
             </div>
-            <input className='text-input' {...field} {...props} />
+            <input
+                className='text-input'
+                {...field}
+                {...props}
+            />
         </>
     );
 };
@@ -41,14 +49,14 @@ const PhoneInput = ({ label, ...props }) => {
 const ContactForm = () => {
     const [showSuccessPage, setShowSuccessPage] = useState(false);
     const [countdownValue, setCountdownValue] = useState(10);
-    const [errorMessage, setErrorMessage] = useState("");
+    const [errorMessage, setErrorMessage] = useState('');
 
     const timeoutMessage = `* You will be redirected to the home page in ${countdownValue} seconds...`;
 
     // redirects to home page after countdown ends
     useEffect(() => {
         if (countdownValue === 0) {
-            window.location = "/";
+            window.location = '/';
         }
     });
 
@@ -65,10 +73,10 @@ const ContactForm = () => {
         emailjs
             .send(
                 // real emailjs
-                "service_y4xngug",
-                "template_ywp4ga2",
+                'service_coefxny',
+                'template_itwcwsl',
                 formValues,
-                "NJynmtQghU3G96OpJ"
+                'NJynmtQghU3G96OpJ'
 
                 // test emailjs
                 // "service_lw3cijd",
@@ -84,7 +92,7 @@ const ContactForm = () => {
                 error => {
                     console.log(error.text);
                     setErrorMessage(
-                        "* Sorry, something went wrong. Please try again."
+                        '* Sorry, something went wrong. Please try again.'
                     );
                 }
             );
@@ -107,7 +115,8 @@ const ContactForm = () => {
                             <div className='contact__submit-container'>
                                 <button
                                     className='contact__submit-button'
-                                    onClick={() => (window.location = "/")}>
+                                    onClick={() => (window.location = '/')}
+                                >
                                     Continue
                                 </button>
                             </div>
@@ -119,24 +128,24 @@ const ContactForm = () => {
                     <div className='contact__heading'>Contact Us</div>
                     <Formik
                         initialValues={{
-                            firstName: "",
-                            lastName: "",
-                            email: "",
-                            phoneNumber: "",
+                            firstName: '',
+                            lastName: '',
+                            email: '',
+                            phoneNumber: '',
                         }}
                         validationSchema={Yup.object({
                             firstName: Yup.string()
-                                .max(25, "* Must be 25 characters or less")
-                                .required("* Required"),
+                                .max(25, '* Must be 25 characters or less')
+                                .required('* Required'),
                             lastName: Yup.string()
-                                .max(25, "* Must be 25 characters or less")
-                                .required("* Required"),
+                                .max(25, '* Must be 25 characters or less')
+                                .required('* Required'),
                             email: Yup.string()
-                                .email("* Invalid email address")
-                                .required("* Required"),
+                                .email('* Invalid email address')
+                                .required('* Required'),
                             phoneNumber: Yup.string().matches(
                                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                                "* Invalid phone number"
+                                '* Invalid phone number'
                             ),
                         })}
                         onSubmit={(values, { setSubmitting }) => {
@@ -148,7 +157,8 @@ const ContactForm = () => {
                             };
                             sendEmail(formParams);
                             setSubmitting(false);
-                        }}>
+                        }}
+                    >
                         <div className='contact__form-container'>
                             <div className='contact__message'>
                                 Please provide your contact information below
@@ -189,7 +199,8 @@ const ContactForm = () => {
                                     <div className='contact__submit-button-container'>
                                         <button
                                             className='contact__submit-button'
-                                            type='submit'>
+                                            type='submit'
+                                        >
                                             Submit
                                         </button>
                                     </div>
