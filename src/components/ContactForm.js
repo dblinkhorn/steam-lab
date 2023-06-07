@@ -73,8 +73,8 @@ const ContactForm = () => {
         emailjs
             .send(
                 // real emailjs
-                'service_coefxny',
-                'template_itwcwsl',
+                'service_y4xngug',
+                'template_ywp4ga2',
                 formValues,
                 'NJynmtQghU3G96OpJ'
 
