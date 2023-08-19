@@ -1,6 +1,6 @@
 export const passwords = [
     'sophiejune',
-    'adam2022',
+    'adam2024',
     'fairlawn2024',
     'wells2022',
     'alvin2023',
