@@ -6,6 +6,8 @@ export const passwords = [
     'alvin2023',
     'beck2023',
     'seth2023',
+    'smbsd-trial',
+    'lucia-mar-trial'
 ];
 
 export default {};
