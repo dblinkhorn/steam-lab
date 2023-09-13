@@ -36,7 +36,7 @@ const LoginForm = props => {
                         ),
                     })}
                     onSubmit={(values, { setSubmitting }) => {
-                        handleLogIn(values.password);
+                        handleLogIn(values.password.toLowerCase());
                         setSubmitting(false);
                     }}>
                     <div className='contact__form-container'>
