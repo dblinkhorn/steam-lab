@@ -7,7 +7,8 @@ export const passwords = [
     'beck2023',
     'seth2023',
     'smbsd-trial',
-    'lucia-mar-trial'
+    'lucia-mar-trial',
+    'boyd24',
 ];
 
 export default {};
